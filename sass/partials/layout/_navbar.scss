@@ -1,0 +1,172 @@
+.nav {
+    width: 100%;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.4s ease;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-img {
+            width: 100px;
+            height: 100px;
+        }
+
+        &-link {
+            // display: none; SE UTILIZO PARA EMPEZAR A ARMAR EL NAV
+            position: absolute;
+            top: 0;
+            right: -200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 100vh;
+            background-color: red;
+            transition: all 0.4s ease;;
+            z-index: -1;
+
+            &.appear {
+                right: 0;
+            }
+        }
+    }
+
+    &-img {
+        width: 100%;
+
+        &-size {
+            width: 75px;
+            height: 75px;
+        }
+    }
+
+    &-trigger {
+        cursor: pointer;
+        width: 30px;
+        height: 25px;
+
+        &.active &-items:nth-child(1) {
+            animation: inT 0.8s forwards;
+        }
+
+        &.active &-items:nth-child(2) {
+            animation: inM 0.8s forwards;
+        }
+
+        &.active &-items:nth-child(3) {
+            animation: inBtm 0.8s forwards;
+        }
+
+        &-items {
+            background-color: #000000;
+            border-radius: 2px;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+
+            &:nth-child(1) {
+                animation: outT 0.8s backwards;
+                animation-direction: reverse;
+            }
+
+            &:nth-child(2) {
+                margin: 5px 0;
+                animation: outM 0.8s backwards;
+                animation-direction: reverse;
+            }
+
+            &:nth-child(3) {
+                animation: outBtm 0.8s backwards;
+                animation-direction: reverse;
+            }
+        }
+    }
+
+    &-link {
+        text-decoration: none;
+        color: black;
+    }
+
+    &-change {
+        padding: 0 20px;
+        background-color: #000000;
+    }
+    
+    &-color-change {
+        filter: invert(1);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
