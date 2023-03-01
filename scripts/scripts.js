@@ -31,3 +31,16 @@ document.addEventListener("scroll", () => {
         itemThree.classList.remove("nav-color-change")
     }
 })
+
+// EVENTO DE QUE UN BOTON ME LLEVE A UNA SECCION
+
+const btnToAbout = document.getElementById("to-about")
+//const about = document.getElementById("about")
+//console.log(about.getBoundingClientRect());
+
+btnToAbout.addEventListener("click", () => {
+    window.scrollTo({
+        top: "660",
+        behavior: "smooth"
+    })
+})
