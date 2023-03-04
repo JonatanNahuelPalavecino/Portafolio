@@ -12,7 +12,7 @@
   text-align: center;
   padding: 20px;
   transition: all 0.4s ease;
-  z-index: 1;
+  z-index: 2;
 }
 .nav-container {
   display: flex;
@@ -371,35 +371,62 @@
     border-radius: 50%;
   }
 }
-.about-container {
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
 .about-text {
   font-family: "Oswald", sans-serif;
   font-size: 2rem;
   color: rgb(25, 25, 26);
   text-transform: uppercase;
   width: 75%;
+  text-align: center;
+}
+.about-education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-certificate {
+  width: 50%;
+  height: 50%;
 }
 
+.slider {
+  width: 69%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 .slider-container {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-}
-
-.slider-box {
   height: 250px;
 }
-
+.slider-box {
+  align-items: center;
+}
 .slider-content {
-  width: 200px;
   height: 200px;
 }
-
 .slider-img {
   width: 100%;
   height: 100%;
+}
+
+.proyects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.proyects-container {
+  width: 75%;
+}
+.proyects-img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

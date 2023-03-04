@@ -1,32 +1,57 @@
-.about-container {
+.about {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        margin: 3rem;
+    }
+    
+    &-text {
+        font-family: 'Oswald', sans-serif;
+        font-size: 2rem;
+        color: rgb(25, 25, 26);
+        text-transform: uppercase;
+        width: 75%;
+        text-align: center;
+    }
+
+    &-education {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-certificate {
+        width: 50%;
+        height: 50%;
+    }
 }
 
-.about-text {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
-    color: rgb(25, 25, 26);
-    text-transform: uppercase;
-    width: 75%;
-}
 
-.slider-container {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-}
-
-.slider-box {
-    height: 250px;
-}
-
-.slider-content {
-    width: 200px;
-    height: 200px;
-}
-
-.slider-img {
-    width: 100%;
-    height: 100%;
+.slider {
+    width: 69%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+    &-container {
+        height: 250px;
+    }
+    
+    &-box {
+        align-items: center;
+    }
+    
+    &-content {
+        height: 200px;
+    }
+    
+    &-img {
+        width: 100%;
+        height: 100%;
+    }
 }

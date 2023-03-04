@@ -35,10 +35,16 @@ document.addEventListener("scroll", () => {
 // EVENTO DE QUE UN BOTON ME LLEVE A UNA SECCION
 
 const btnToAbout = document.getElementById("to-about")
-//const about = document.getElementById("about")
-//console.log(about.getBoundingClientRect());
+const btnToWork = document.getElementById("to-work")
 
 btnToAbout.addEventListener("click", () => {
+    window.scrollTo({
+        top: "660",
+        behavior: "smooth"
+    })
+})
+
+btnToWork.addEventListener("click", () => {
     window.scrollTo({
         top: "660",
         behavior: "smooth"
@@ -49,8 +55,10 @@ btnToAbout.addEventListener("click", () => {
 
 var splide = new Splide( '.splide', {
     type   : 'loop',
-    perPage: 4,
+    perPage: 3,
     focus  : 'center',
+    autoplay: true,
+    pagination: false
 });
   
 splide.mount();

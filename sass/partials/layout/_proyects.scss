@@ -1,0 +1,13 @@
+.proyects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-container {
+        width: 75%;
+    }
+
+    &-img {
+        width: 100%;
+    }
+}
