@@ -2,12 +2,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fbfbf7;
+    padding: 2rem;
 
     &-container {
         width: 75%;
+        margin: 2rem;
     }
 
     &-img {
         width: 100%;
+        border-radius: 10px;
+        box-shadow:  -15px 15px 30px #646463,
+             15px -15px 30px #ffffff;
     }
 }

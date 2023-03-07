@@ -39,14 +39,14 @@ const btnToWork = document.getElementById("to-work")
 
 btnToAbout.addEventListener("click", () => {
     window.scrollTo({
-        top: "660",
+        top: "900",
         behavior: "smooth"
     })
 })
 
 btnToWork.addEventListener("click", () => {
     window.scrollTo({
-        top: "660",
+        top: "4300",
         behavior: "smooth"
     })
 })
@@ -58,7 +58,9 @@ var splide = new Splide( '.splide', {
     perPage: 3,
     focus  : 'center',
     autoplay: true,
-    pagination: false
+    pagination: false,
+    pauseOnHover: false,
+    pauseOnFocus: false,
 });
   
 splide.mount();
