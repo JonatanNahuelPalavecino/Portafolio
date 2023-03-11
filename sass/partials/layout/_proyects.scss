@@ -7,13 +7,34 @@
 
     &-container {
         width: 75%;
+        height: 550px;
         margin: 2rem;
-    }
-
-    &-img {
-        width: 100%;
         border-radius: 10px;
         box-shadow:  -15px 15px 30px #646463,
              15px -15px 30px #ffffff;
+        overflow: hidden;
+    }
+
+    &-img {
+        //width: 100%;
+        height: 100%;
+        //object-fit: cover;
+        
+    }
+
+    &-detail {
+        background-color: rgba($color: #ffffff, $alpha: .5);
+        height: 101%;
+        width: 100%;
+        position: relative;
+        bottom: 101%;
+        left: 0;
+        z-index: 1;
+        opacity: 0;
+        transition: .5s ease ;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 }
