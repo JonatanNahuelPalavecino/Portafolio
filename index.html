@@ -31,8 +31,8 @@
             </div>
         </nav>
         <main class="hero">
-            <div class="hero-container">
-                <img class="hero-img" src="./images/27.02.2023_20.32.49_REC-removebg-preview.png" alt="Jonatan">
+            <div id="hero-containerImg" class="hero-container">
+                
             </div>
             <div class="hero-container">
                 <p class="hero-text">Hola, mi nombre es Jonatan y soy desarrollador web!</p>
@@ -176,7 +176,55 @@
                     </div>
                 </div>
             </div>
+            <div class="about-container">
+                <span class="about-text">Actualmente me encuentro profundizando los conocimientos adquiridos y practicando en la creación de otros aplicativos web que iré actualizando en este portafolio. Mis siguientes pasos son el studio de Typescript y las herramientas utilizadas por backend's.</span>
+                <span class="about-text">Te gustaría contactarme?</span>
+            </div>
+            <button id="to-contact" class="hero-btn">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front text"> Contacto</span>
+            </button>
+            <img class="wave" src="./images/wave.svg" alt="wave">
+            <img src="./images/wave.svg" alt="wave">
         </section>
-        <br><br><br><br><br><br><br><br><br><br>
+        <section class="contact">
+            <span class="about-text">Contacto</span>
+            <div class="contact-container">
+                <div class="contact-box">
+                    <form class="form" action="">
+                        <fieldset class="form-container">
+                            <div class="form-box-input">
+                                <label class="form-title" for="">Nombre</label>
+                                <input class="form-input" type="text">
+                            </div>
+                            <div class="form-box-input">
+                                <label class="form-title" for="">Teléfono</label>
+                                <input class="form-input" type="number">
+                            </div>
+                            <div class="form-box-input">
+                                <label class="form-title" for="">Comentarios</label>
+                                <textarea class="form-input form-textarea" name="" id=""></textarea>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="contact-box">
+                    <div class="contact-detail">
+                        <span class="contact-title">También podes contactarme por estos medios</span>
+                        <ul class="contact-btns">
+                            <li class="contact-btn">
+                                <a class="contact-text" href="">Linkedin</a></li>
+                            <li class="contact-btn">
+                                <a class="contact-text" href="">Github</a></li>
+                            <li class="contact-btn">
+                                <a class="contact-text" href="">Email</a></li>
+                            <li class="contact-btn">
+                                <a class="contact-text" href="">Whatsapp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>

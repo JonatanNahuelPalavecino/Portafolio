@@ -36,6 +36,7 @@ document.addEventListener("scroll", () => {
 
 const btnToAbout = document.getElementById("to-about")
 const btnToWork = document.getElementById("to-work")
+const btnToContact = document.getElementById("to-contact")
 
 btnToAbout.addEventListener("click", () => {
     window.scrollTo({
@@ -47,6 +48,13 @@ btnToAbout.addEventListener("click", () => {
 btnToWork.addEventListener("click", () => {
     window.scrollTo({
         top: "4300",
+        behavior: "smooth"
+    })
+})
+
+btnToContact.addEventListener("click", () => {
+    window.scrollTo({
+        top: "7000",
         behavior: "smooth"
     })
 })
@@ -64,3 +72,26 @@ var splide = new Splide( '.splide', {
 });
   
 splide.mount();
+
+// HOVER DE CAMBIO DE IMAGEN EN HERO
+
+const contenedorImg = document.getElementById("hero-containerImg")
+
+contenedorImg.innerHTML = `
+        <img id="img" style= "transition: .5s ease" class="hero-img" src="./images/27.02.2023_20.32.49_REC-removebg-preview.png" alt="Jonatan animado">
+`
+
+contenedorImg.addEventListener("mouseout", () => {
+
+    const img = document.getElementById("img")
+    img.setAttribute("src", "./images/27.02.2023_20.32.49_REC-removebg-preview.png")
+
+})
+
+contenedorImg.addEventListener("mouseover", () => {
+    
+    const img = document.getElementById("img")
+    img.setAttribute("src", "./images/20221109_013001-removebg-preview(4).png")
+    
+    
+})

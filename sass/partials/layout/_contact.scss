@@ -1,0 +1,73 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fbfbf7;
+    padding: 2rem 0;
+
+    &-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 75%;
+        margin: 2rem;
+    }
+
+    &-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+    }
+
+    &-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-title {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.2rem;
+        color: rgb(25, 25, 26);
+        text-transform: uppercase;
+        padding: 10px 0;
+    }
+
+    &-btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 1rem 0;
+        height: 250px;
+    }
+
+    &-btn {
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        background-color: #ccc;
+        box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+        transition: 300ms ease-in-out;
+        width: 190px;
+        height: 45px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: white;
+            transform: scale(1.05);
+            box-shadow: 13px 13px 100px #969696,
+                    -13px -13px 100px #ffffff;
+        }
+    }
+
+    &-text {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.2rem;
+        color: rgb(25, 25, 26);
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
