@@ -32,6 +32,17 @@ document.addEventListener("scroll", () => {
     }
 })
 
+//OBTENCION DEL ELEMENTO Y APLICACION DE EVENTO
+
+const link = document.querySelectorAll(".nav-link")
+
+link.forEach( (e) => {
+    e.addEventListener("click", () => {
+        sidebar.classList.remove("appear")
+        trigger.classList.remove("active")
+    })
+})
+
 // EVENTO DE QUE UN BOTON ME LLEVE A UNA SECCION
 
 const btnToAbout = document.getElementById("to-about")
@@ -39,24 +50,27 @@ const btnToWork = document.getElementById("to-work")
 const btnToContact = document.getElementById("to-contact")
 
 btnToAbout.addEventListener("click", () => {
-    window.scrollTo({
-        top: "900",
-        behavior: "smooth"
-    })
+    // window.scrollTo({
+    //     top: "#about",
+    //     behavior: "smooth"
+    // })
+    window.scrollBy(0, window.innerHeight);
 })
 
 btnToWork.addEventListener("click", () => {
-    window.scrollTo({
-        top: "4300",
-        behavior: "smooth"
-    })
+    // window.scrollTo({
+    //     top: "4300",
+    //     behavior: "smooth"
+    // })
+    window.scrollBy(0, window.innerHeight);
 })
 
 btnToContact.addEventListener("click", () => {
-    window.scrollTo({
-        top: "7000",
-        behavior: "smooth"
-    })
+    // window.scrollTo({
+    //     top: "7000",
+    //     behavior: "smooth"
+    // })
+    window.scrollBy(0, window.innerHeight);
 })
 
 //CARROUSEL

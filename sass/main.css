@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .nav {
@@ -86,6 +87,11 @@
   font-family: "Oswald", sans-serif;
   text-decoration: none;
   color: black;
+  transition: 0.5s ease;
+}
+.nav-link:hover {
+  transform: scale(1.15);
+  text-shadow: -1px 1px 2px white;
 }
 .nav-change {
   padding: 0 20px;
@@ -438,7 +444,6 @@
   flex-direction: column;
   align-items: center;
   background-color: #fbfbf7;
-  padding: 2rem 0;
 }
 .proyects-container {
   width: 75%;

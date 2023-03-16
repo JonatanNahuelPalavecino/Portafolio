@@ -94,6 +94,12 @@
         font-family: 'Oswald', sans-serif;
         text-decoration: none;
         color: black;
+        transition: .5s ease;
+
+        &:hover {
+            transform: scale(1.15);
+            text-shadow: -1px 1px 2px white;
+        }
     }
 
     &-change {
