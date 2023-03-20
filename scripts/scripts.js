@@ -92,20 +92,5 @@ splide.mount();
 const contenedorImg = document.getElementById("hero-containerImg")
 
 contenedorImg.innerHTML = `
-        <img id="img" style= "transition: .5s ease" class="hero-img" src="./images/27.02.2023_20.32.49_REC-removebg-preview.png" alt="Jonatan animado">
+        <img id="img" class="hero-img" src="./images/27.02.2023_20.32.49_REC-removebg-preview.png" alt="Jonatan animado">
 `
-
-contenedorImg.addEventListener("mouseout", () => {
-
-    const img = document.getElementById("img")
-    img.setAttribute("src", "./images/27.02.2023_20.32.49_REC-removebg-preview.png")
-
-})
-
-contenedorImg.addEventListener("mouseover", () => {
-    
-    const img = document.getElementById("img")
-    img.setAttribute("src", "./images/20221109_013001-removebg-preview(4).png")
-    
-    
-})

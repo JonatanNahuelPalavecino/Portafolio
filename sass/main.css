@@ -405,7 +405,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem;
+  padding: 2rem;
+  background: url(../../../images/line_background.svg);
 }
 .about-certificate {
   width: 50%;
@@ -445,6 +446,12 @@
   align-items: center;
   background-color: #fbfbf7;
 }
+.proyects-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../../../images/line_background.svg);
+}
 .proyects-container {
   width: 75%;
   height: 550px;
@@ -464,7 +471,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
   height: 101%;
   width: 100%;
   position: relative;
@@ -520,7 +527,6 @@
   flex-direction: column;
   align-items: center;
   background-color: #fbfbf7;
-  padding: 2rem 0;
 }
 .contact-container {
   display: flex;
@@ -580,8 +586,16 @@
   text-decoration: none;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .form-container {
   border: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-box-input {
@@ -619,4 +633,10 @@
   width: 75%;
   height: 100px;
   resize: none;
+}
+
+.form-btn {
+  width: 35%;
+  align-self: center;
+  margin: 1rem 0;
 }/*# sourceMappingURL=main.css.map */

@@ -4,6 +4,13 @@
     align-items: center;
     background-color: #fbfbf7;
 
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url(../../../images/line_background.svg);
+    }
+
     &-container {
         width: 75%;
         height: 550px;
@@ -26,7 +33,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: rgba($color: #ffffff, $alpha: .7);
+        background-color: rgba($color: #ffffff, $alpha: .9);
         height: 101%;
         width: 100%;
         position: relative;

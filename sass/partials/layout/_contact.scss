@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     background-color: #fbfbf7;
-    padding: 2rem 0;
 
     &-container {
         display: flex;
@@ -70,4 +69,10 @@
         text-transform: uppercase;
         text-decoration: none;
     }
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }

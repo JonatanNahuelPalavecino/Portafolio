@@ -1,5 +1,7 @@
 .form-container {
     border: none;
+    display: flex;
+    flex-direction: column;
 }
 
 .form-box-input {
@@ -39,4 +41,10 @@
     width: 75%;
     height: 100px;
     resize: none;
+}
+
+.form-btn {
+    width: 35%;
+    align-self: center;
+    margin: 1rem 0;
 }

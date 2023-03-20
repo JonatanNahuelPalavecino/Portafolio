@@ -25,7 +25,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 2rem;
+        padding: 2rem;
+        background: url(../../../images/line_background.svg);
     }
 
     &-certificate {
