@@ -10,6 +10,17 @@ trigger.addEventListener("click", () => {
 
 //OBTENCION DEL ELEMENTO Y APLICACION DE EVENTO
 
+const link = document.querySelectorAll(".nav-link")
+
+link.forEach( (e) => {
+    e.addEventListener("click", () => {
+        sidebar.classList.remove("appear")
+        trigger.classList.remove("active")
+    })
+})
+
+//OBTENCION DEL ELEMENTO Y APLICACION DE EVENTO
+
 const nav = document.getElementById("nav")
 const logo = document.getElementById("logo")
 const itemOne = document.getElementById("item-one")
@@ -30,17 +41,6 @@ document.addEventListener("scroll", () => {
         itemTwo.classList.remove("nav-color-change")
         itemThree.classList.remove("nav-color-change")
     }
-})
-
-//OBTENCION DEL ELEMENTO Y APLICACION DE EVENTO
-
-const link = document.querySelectorAll(".nav-link")
-
-link.forEach( (e) => {
-    e.addEventListener("click", () => {
-        sidebar.classList.remove("appear")
-        trigger.classList.remove("active")
-    })
 })
 
 // EVENTO DE QUE UN BOTON ME LLEVE A UNA SECCION
@@ -94,3 +94,110 @@ const contenedorImg = document.getElementById("hero-containerImg")
 contenedorImg.innerHTML = `
         <img id="img" class="hero-img" src="./images/27.02.2023_20.32.49_REC-removebg-preview.png" alt="Jonatan animado">
 `
+
+// FORMULARIO
+
+const btnSubmit = document.getElementById("form-btn")
+const formulario = document.getElementById("form")
+const userName = document.getElementById("user-name")
+const userNumber = document.getElementById("user-number")
+const userMail = document.getElementById("user-email")
+const userText = document.getElementById("user-text")
+
+const peticion = async () => {
+
+    const data = {
+        service_id: 'service_ss9d6fk',
+        template_id: 'template_m1t27wb',
+        user_id: 'aZgMn9dfcQY3QZtbj',
+        template_params: {
+            'from_name': userName.value,
+            'from_number': userNumber.value,
+            'from_email': userMail.value,
+            'message': userText.value
+        }
+    };
+
+    const spinner = document.getElementById("spinner")
+    spinner.innerHTML = `
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    `
+
+    await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+            "Content-Type": 'application/json',
+        }
+    })
+    .then(() => {
+        spinner.innerText = "Enviar"
+        mostrarMensaje()
+        formulario.reset()
+    })
+    .catch((err) => {
+        console.log(err);
+    })
+}
+
+const mostrarMensaje = () => {
+    const mensaje = document.createElement("div")
+
+    mensaje.classList.add("form-message")
+    mensaje.innerHTML = `
+        <span class="form-title">Muchas gracias por contactarte! Te responderé a la brevedad.</span>
+    `
+    formulario.append(mensaje)
+
+    setTimeout(() => {
+        mensaje.remove(formulario)
+    }, 3000);
+}
+
+btnSubmit.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    //verificacion de los campos
+
+    if (userName.value.length < 5) {
+
+        userName.classList.add("form-advice")
+
+        setTimeout(() => {
+            userName.classList.remove("form-advice")
+        }, 1000);
+
+        return
+    }
+    
+    if (userNumber.value.length < 10) {
+
+        userNumber.classList.add("form-advice")
+
+        setTimeout(() => {
+            userNumber.classList.remove("form-advice")
+        }, 1000);
+
+        return
+    }
+
+    const emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    
+    if (!emailRegex.test(userMail.value)) {
+
+        userMail.classList.add("form-advice")
+
+        setTimeout(() => {
+            userMail.classList.remove("form-advice")
+        }, 1000);
+
+        return
+    }
+
+    peticion()
+})

@@ -60,7 +60,7 @@
             </div >
         </main>
         <section id="about" class="about">
-            <img src="./images/wave.svg" alt="wave">
+            <img class="wave-down" src="./images/wave.svg" alt="wave">
             <div class="about-container">
                 <span class="about-text">Mi nombre es Jonatan Palavecino, tengo 30 años, y vivo en el barrio de Mataderos de la Ciudad Autónoma de Buenos Aires. Desde principios del 2021 comencé a incursionar en el mundo de la programación con Java a través de videos en Youtube, hasta que en Octubre de ese mismo año me inscribí en la carrera de desarrollador Frontend de Coderhouse.</span>
                 <span class="about-text">Desde entonces aprendí:</span>
@@ -107,10 +107,10 @@
                 <span class="edge"></span>
                 <span class="front text"> Ver trabajos</span>
             </button>
-            <img class="wave" src="./images/wave.svg" alt="wave">
+            <img class="wave-up" src="./images/wave.svg" alt="wave">
         </section>
         <section id="work" class="proyects">
-            <img src="./images/wave.svg" alt="wave">
+            <img class="wave-down" src="./images/wave.svg" alt="wave">
             <span class="about-text">Mis proyectos</span>
             <div class="proyects-content">
                 <div class="proyects-container">
@@ -189,35 +189,35 @@
                 <span class="edge"></span>
                 <span class="front text"> Contacto</span>
             </button>
-            <img class="wave" src="./images/wave.svg" alt="wave">
+            <img class="wave-up" src="./images/wave.svg" alt="wave">
         </section>
         <section id="contact" class="contact">
-            <img src="./images/wave.svg" alt="wave">
+            <img class="wave-down" src="./images/wave.svg" alt="wave">
             <span class="about-text">Contacto</span>
             <div class="contact-container">
                 <div class="contact-box">
-                    <form class="form" action="">
+                    <form id="form" class="form" action="">
                         <fieldset class="form-container">
                             <div class="form-box-input">
-                                <label class="form-title" for="">Nombre y Apellido</label>
-                                <input class="form-input" type="text" placeholder="Ingrese su nombre">
+                                <label class="form-title" for="user-name">Nombre y Apellido</label>
+                                <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ingrese su nombre">
                             </div>
                             <div class="form-box-input">
-                                <label class="form-title" for="">Teléfono</label>
-                                <input class="form-input" type="number" placeholder="Ingresá tu teléfono">
+                                <label class="form-title" for="user-number">Teléfono</label>
+                                <input class="form-input" type="number" id="user-number" name="user-number" placeholder="Ingresá tu teléfono">
                             </div>
                             <div class="form-box-input">
-                                <label class="form-title" for="">Email</label>
-                                <input class="form-input" type="text" placeholder="Ingresá tu email">
+                                <label class="form-title" for="user-email">Email</label>
+                                <input class="form-input" type="text" id="user-email" name="user-email" placeholder="Ingresá tu email">
                             </div>
                             <div class="form-box-input">
-                                <label class="form-title" for="">Comentarios</label>
-                                <textarea class="form-input form-textarea" name="" id="" placeholder="Comentame el motivo de tu contacto..."></textarea>
+                                <label class="form-title" for="user-text">Comentarios</label>
+                                <textarea class="form-input form-textarea" id="user-text" name="user-text" placeholder="Comentame el motivo de tu contacto..."></textarea>
                             </div>
-                            <button id="" class="hero-btn form-btn">
+                            <button id="form-btn" type="submit" class="hero-btn form-btn">
                                 <span class="shadow"></span>
                                 <span class="edge"></span>
-                                <span class="front text"> Enviar</span>
+                                <span id="spinner" class="front"> Enviar</span>
                             </button>
                         </fieldset>
                     </form>

@@ -62,8 +62,13 @@
     }
 }
 
-.wave {
+.wave-up {
     transform: rotate(180deg);
     position: relative;
     top: 1px;
+}
+
+.wave-down {
+    position: relative;
+    bottom: 1px;
 }
