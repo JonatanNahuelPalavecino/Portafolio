@@ -5,11 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="./sass/main.css">
         <link rel="shortcut icon" href="./images/logo portafolio.png">
         <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-        <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
         <script defer src="./scripts/scripts.js"></script>
         <title>Portafolio de Jonatan Palavecino - Desarrollador web</title>
     </head>
@@ -34,10 +33,10 @@
             </div>
         </nav>
         <main id="hero" class="hero">
-            <div id="hero-containerImg" class="hero-container">
+            <div id="hero-containerImg" class="to-left hero-container">
                 <!-- Aca va la <img/> del DOM -->
             </div>
-            <div class="hero-container">
+            <div class="to-right hero-container">
                 <p class="hero-text">Hola, mi nombre es Jonatan y soy desarrollador web!</p>
                 <button id="to-about" class="hero-btn">
                     <span class="shadow"></span>
@@ -95,9 +94,9 @@
             </div>
             <div class="about-education">
                 <span class="about-text">Cursos aprobados</span>
-                <img data-aos-delay="500" data-aos="fade-right" data-aos-mirror="false" class="about-certificate" src="./images/Certificado - Desarrollo Web.png" alt="desarrollo-web">
-                <img data-aos-delay="500" data-aos="fade-left" data-aos-mirror="false" class="about-certificate" src="./images/Certificado - Javascript.png" alt="javascript">
-                <img data-aos-delay="500" data-aos="fade-right" data-aos-mirror="false" class="about-certificate" src="./images/Certificado - ReactJs.png" alt="ReactJs">
+                <img class="to-left about-certificate" src="./images/Certificado - Desarrollo Web.png" alt="desarrollo-web">
+                <img class="to-right about-certificate" src="./images/Certificado - Javascript.png" alt="javascript">
+                <img class="to-left about-certificate" src="./images/Certificado - ReactJs.png" alt="ReactJs">
             </div>
             <div class="about-container">
                 <span class="about-text">Y con estas herramientas pude emprender algunos proyectos.</span>
@@ -114,7 +113,7 @@
             <img class="wave-down" src="./images/wave.svg" alt="wave">
             <span class="about-text">Mis proyectos</span>
             <div class="proyects-content">
-                <div data-aos-delay="500" data-aos="fade-right" data-aos-mirror="false" class="proyects-container">
+                <div class="to-left proyects-container">
                     <img class="proyects-img" src="./images/didisculpidas.png" alt="didi-sculpidas">
                     <div class="proyects-detail">
                         <span class="proyects-text">Página web presentada como "proyecto final" del curso de Desarrollo Web en Coderhouse.</span>
@@ -138,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos-delay="500" data-aos="fade-left" data-aos-mirror="false" class="proyects-container">
+                <div class="to-right proyects-container">
                     <img class="proyects-img" src="./images/juntad-app.png" alt="didi-sculpidas">
                     <div class="proyects-detail">
                         <span class="proyects-text">Página web presentado como "proyecto final" del curso de Javascript Web en Coderhouse.</span>
@@ -160,7 +159,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos-delay="500" data-aos="fade-right" data-aos-mirror="false" class="proyects-container">
+                <div class="to-left proyects-container">
                     <img class="proyects-img" src="./images/jbpremium.png" alt="jbpremium">
                     <div class="proyects-detail">
                         <span class="proyects-text">Primer página web real realizada como freelance para un importador de vinos españoles. Aplicación web donde se encuentra el catálogo completo de productos del cliente, con los precios actualizados por el dolar y pago de productos dentro de la app (a través de API's), más la utilización de Firebase como base de datos.</span>
@@ -240,6 +239,5 @@
                 </div>
             </div>
         </section>
-        
     </body>
 </html>

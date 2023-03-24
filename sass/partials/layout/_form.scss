@@ -50,14 +50,14 @@
 }
 
 .form-message {
-  width: 350px;
-  border-radius: 35px;
-  background-color: #32db32;
-  text-align: center;
-  padding: 20px;
-  position: absolute;
-  top: 7550px;
-  right: 325px;
+    width: 350px;
+    border-radius: 35px;
+    background-color: #32db32;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    top: 65%;
+    right: 20%;
 }
 
 .lds-ring {

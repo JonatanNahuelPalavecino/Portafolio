@@ -654,9 +654,9 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #32db32;
   text-align: center;
   padding: 20px;
-  position: absolute;
-  top: 7550px;
-  right: 325px;
+  position: fixed;
+  top: 65%;
+  right: 20%;
 }
 
 .lds-ring {

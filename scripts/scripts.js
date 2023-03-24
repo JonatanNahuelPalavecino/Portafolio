@@ -154,9 +154,9 @@ const mostrarMensaje = () => {
     `
     formulario.append(mensaje)
 
-    setTimeout(() => {
-        mensaje.remove(formulario)
-    }, 3000);
+    // setTimeout(() => {
+    //     mensaje.remove(formulario)
+    // }, 3000);
 }
 
 btnSubmit.addEventListener("click", (e) => {
@@ -202,9 +202,19 @@ btnSubmit.addEventListener("click", (e) => {
     peticion()
 })
 
-//AOS
+//EFECTO DE SCROLL
 
-AOS.init({
-    duration: 600,
-    easing: 'ease-in-out-back'
+ScrollReveal().reveal('.to-left', { 
+    distance: '100px',
+    origin: "left",
+    reset: "true",
+    delay: 200,
 });
+
+ScrollReveal().reveal('.to-right', { 
+    distance: '100px',
+    origin: "right",
+    reset: "true",
+    delay: 200,
+});
+
