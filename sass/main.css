@@ -24,6 +24,10 @@
   width: 100px;
   height: 100px;
 }
+.nav-container-img-change {
+  width: 85px;
+  height: 85px;
+}
 .nav-container-link {
   position: absolute;
   top: 0;
@@ -649,14 +653,48 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .form-message {
-  width: 350px;
-  border-radius: 35px;
-  background-color: #32db32;
-  text-align: center;
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
   position: fixed;
-  top: 65%;
-  right: 20%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+  opacity: 0;
+  z-index: -1;
+}
+
+.form-message-active {
+  opacity: 1;
+  z-index: 0;
+}
+
+.form-message-container {
+  background-color: white;
+  width: 360px;
+  height: 130px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.form-container-text {
+  text-align: center;
+  padding: 3px 0 3px 25px;
+}
+
+.form-container-icon {
+  align-self: flex-start;
+  margin: 3px;
+}
+
+.form-icon {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
 }
 
 .lds-ring {

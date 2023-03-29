@@ -145,18 +145,28 @@ const peticion = async () => {
     })
 }
 
+const mensaje = document.createElement("div")
+
+mensaje.classList.add("form-message")
+mensaje.innerHTML = `
+    <div class="form-message-container">
+        <div class="form-container-text">
+            <span class="form-title">Muchas gracias por contactarte! Te responderé a la brevedad.</span>
+        </div>
+        <div class="form-container-icon">
+            <img id="form-icon" class="form-icon" src="./images/close-circle-svgrepo-com.svg" alt="close">
+        </div>
+    </div>
+`
+formulario.append(mensaje)
+
 const mostrarMensaje = () => {
-    const mensaje = document.createElement("div")
 
-    mensaje.classList.add("form-message")
-    mensaje.innerHTML = `
-        <span class="form-title">Muchas gracias por contactarte! Te responderé a la brevedad.</span>
-    `
-    formulario.append(mensaje)
+    mensaje.classList.add("form-message-active")
 
-    // setTimeout(() => {
-    //     mensaje.remove(formulario)
-    // }, 3000);
+    setTimeout(() => {
+        mensaje.classList.remove("form-message-active")
+    }, 3000);
 }
 
 btnSubmit.addEventListener("click", (e) => {
@@ -218,3 +228,10 @@ ScrollReveal().reveal('.to-right', {
     delay: 200,
 });
 
+// EVENTO DE CIERRE DE BOTON (EN MENSAJE)
+
+const btnClose = document.getElementById("form-icon")
+
+btnClose.addEventListener("click", () => {
+    mensaje.classList.remove("form-message-active")
+})
