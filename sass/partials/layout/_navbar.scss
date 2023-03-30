@@ -41,6 +41,15 @@
                 right: 0;
             }
         }
+
+        &-checkbox {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            bottom: 10px;
+        }
     }
 
     &-img {
@@ -114,6 +123,20 @@
     
     &-color-change {
         filter: invert(1);
+    }
+
+    
+}
+
+.nav-checkbox-img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    
+    &:hover {
+        box-shadow: -1px 1px 13px white;
+        border-radius: 20px;
+        transition: all .5s ease-in-out
     }
 }
 

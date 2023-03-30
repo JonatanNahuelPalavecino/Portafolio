@@ -26,11 +26,15 @@
                     <span id="item-three" class="nav-trigger-items"></span>
                 </div>
                 <div id="sidebar" class="nav-container-link">
-                    <a class="nav-link" href="#hero">INICIO</a>
-                    <a class="nav-link" href="#about">SOBRE MÍ</a>
-                    <a class="nav-link" href="#work">MIS TRABAJOS</a>
-                    <a class="nav-link" href="/">CV</a>
-                    <a class="nav-link" href="#contact">CONTACTO</a>
+                    <a data-section="inicio" data-value="link-uno" class="nav-link" href="#hero">INICIO</a>
+                    <a data-section="inicio" data-value="link-dos" class="nav-link" href="#about">SOBRE MÍ</a>
+                    <a data-section="inicio" data-value="link-tres" class="nav-link" href="#work">MIS TRABAJOS</a>
+                    <a data-section="inicio" data-value="link-cuatro" class="nav-link" href="#contact">CONTACTO</a>
+                    <a data-section="inicio" data-value="link-cinco" class="nav-link" href="/">DESCARGAR CV</a>
+                    <div class="nav-container-checkbox">
+                        <img class="flags nav-checkbox-img" src="./images/spain-1.1s-200px.png" data-language="es" alt="Español">   
+                        <img class="flags nav-checkbox-img" src="./images/the united states-1.1s-200px.png" data-language="en" alt="Inglés">
+                    </div>
                 </div>
             </div>
         </nav>
@@ -39,7 +43,7 @@
                 <!-- Aca va la <img/> del DOM -->
             </div>
             <div class="to-right hero-container">
-                <p class="hero-text">Hola, mi nombre es Jonatan y soy desarrollador web!</p>
+                <p data-section="inicio" data-value="saludo" class="hero-text">Hola, mi nombre es Jonatan y soy desarrollador web!</p>
                 <button id="to-about" class="hero-btn">
                     <span class="shadow"></span>
                     <span class="edge"></span>

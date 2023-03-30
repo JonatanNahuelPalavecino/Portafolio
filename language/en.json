@@ -1,0 +1,10 @@
+{
+    "inicio": {
+        "saludo": "Hi, my name is Jonatan Palavecino and i'm Web Development!",
+        "link-uno": "START",
+        "link-dos": "ABOUT ME",
+        "link-tres": "PROYECTS",
+        "link-cuatro": "CONTACT",
+        "link-cinco": "DOWNLOAD CV"
+    }
+}

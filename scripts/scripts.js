@@ -235,3 +235,31 @@ const btnClose = document.getElementById("form-icon")
 btnClose.addEventListener("click", () => {
     mensaje.classList.remove("form-message-active")
 })
+
+// CAMBIO DE IDIOMA
+
+const flags = document.querySelectorAll(".flags")
+
+const textsToChange = document.querySelectorAll("[data-section]")
+
+const changeLanguage = async (language) => {
+    const req = await fetch(`./language/${language}.json`)
+    const texts = await req.json()
+
+    for (const textosParaCambiar of textsToChange) {
+        const section = textosParaCambiar.dataset.section
+        const value = textosParaCambiar.dataset.value
+
+        textosParaCambiar.innerHTML = texts[section][value]
+    }
+}
+
+flags.forEach((e) => {
+    e.addEventListener("click", (el) => {
+        changeLanguage(el.target.dataset.language);
+    })
+})
+
+
+
+

@@ -1,0 +1,10 @@
+{
+    "inicio": {
+        "saludo": "Hola, mi nombre es Jonatan y soy desarrollador web!",
+        "link-uno": "INICIO",
+        "link-dos": "SOBRE MÍ",
+        "link-tres": "MIS PROYECTOS",
+        "link-cuatro": "CONTACTO",
+        "link-cinco": "DESCARGAR CV"
+    }
+}
