@@ -212,7 +212,7 @@
   font-family: "Oswald", sans-serif;
   font-size: 3rem;
   padding: 2rem;
-  height: 350px;
+  height: 300px;
   color: aliceblue;
   text-shadow: -4px 4px black;
   text-transform: uppercase;
@@ -608,7 +608,9 @@
   transform: scale(1.05);
   box-shadow: 13px 13px 100px #969696, -13px -13px 100px #ffffff;
 }
-.contact-text {
+.contact-link {
+  display: flex;
+  align-items: center;
   font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
   color: rgb(25, 25, 26);

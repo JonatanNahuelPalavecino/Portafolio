@@ -64,7 +64,9 @@
         }
     }
 
-    &-text {
+    &-link {
+        display: flex;
+        align-items: center;
         font-family: 'Oswald', sans-serif;
         font-size: 1.2rem;
         color: rgb(25, 25, 26);

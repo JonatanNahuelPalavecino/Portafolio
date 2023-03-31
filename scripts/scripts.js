@@ -151,7 +151,7 @@ mensaje.classList.add("form-message")
 mensaje.innerHTML = `
     <div class="form-message-container">
         <div class="form-container-text">
-            <span class="form-title">Muchas gracias por contactarte! Te responderé a la brevedad.</span>
+            <span data-section="contact" data-value="success" class="form-title">Muchas gracias por contactarte! Te responderé a la brevedad.</span>
         </div>
         <div class="form-container-icon">
             <img id="form-icon" class="form-icon" src="./images/close-circle-svgrepo-com.svg" alt="close">
@@ -240,23 +240,30 @@ btnClose.addEventListener("click", () => {
 
 const flags = document.querySelectorAll(".flags")
 
-const textsToChange = document.querySelectorAll("[data-section]")
+const textsToChange = document.querySelectorAll("[data-section]") //Selecciona las etiquetas que tengan el atributo "data-section"
 
 const changeLanguage = async (language) => {
+
+    //recibe por parametro el valor del atributo "data-language" y lo utiliza para buscar con el fetch el archivo json dentro del proyecto
     const req = await fetch(`./language/${language}.json`)
-    const texts = await req.json()
+    const texts = await req.json() //aca tengo el dato del json
 
     for (const textosParaCambiar of textsToChange) {
+
+        //en las variables section elige a traves del for of, todas las etiquetas que tengan el atributo data-section, en la variable value, toma su valor
         const section = textosParaCambiar.dataset.section
         const value = textosParaCambiar.dataset.value
-
+        
+        //y por ultimo, aca les cambia el valor original por los obtenidos en la peticion, guardados en la variable texts (ver console.log comentado)
         textosParaCambiar.innerHTML = texts[section][value]
+        
+        // console.log(texts[section][value]);
     }
 }
 
 flags.forEach((e) => {
     e.addEventListener("click", (el) => {
-        changeLanguage(el.target.dataset.language);
+        changeLanguage(el.target.dataset.language); //Selecciona las etiquetas que tengan el atributo "data-language" y pasa el valor como parametro a la funcion "changeLanguage" ("es" o "en")
     })
 })
 

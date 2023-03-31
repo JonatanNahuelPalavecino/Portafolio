@@ -1,10 +1,83 @@
 {
-    "inicio": {
+    "head": {
+        "title": "Portafolio de Jonatan Palavecino - Desarrollador web"
+    },
+
+    "navbar": {
+        "link-one": "INICIO",
+        "link-two": "SOBRE MÍ",
+        "link-three": "MIS PROYECTOS",
+        "link-four": "CONTACTO",
+        "link-five": "DESCARGAR CV"
+    },
+
+    "hero": {
         "saludo": "Hola, mi nombre es Jonatan y soy desarrollador web!",
-        "link-uno": "INICIO",
-        "link-dos": "SOBRE MÍ",
-        "link-tres": "MIS PROYECTOS",
-        "link-cuatro": "CONTACTO",
-        "link-cinco": "DESCARGAR CV"
+        "btn-hero": "Comencemos!"
+    },
+
+    "about": {
+        "text-one": "Mi nombre es Jonatan Palavecino, tengo 30 años, y vivo en el barrio de Mataderos de la Ciudad Autónoma de Buenos Aires. Desde principios del 2021 comencé a incursionar en el mundo de la programación con Java a través de videos en Youtube, hasta que en Octubre de ese mismo año me inscribí en la carrera de desarrollador Frontend de Coderhouse.",
+        "text-two": "Desde entonces aprendí:",
+        "title": "Cursos aprobados",
+        "text-three": "Y con estas herramientas pude emprender algunos proyectos.",
+        "text-four": "¿Te gustaría verlos?",
+        "btn-about": "Ver trabajos"
+    },
+
+    "proyects": {
+        "title": "Mis proyectos",
+        "text-one": "Actualmente me encuentro profundizando los conocimientos adquiridos y practicando en la creación de otros aplicativos web que iré actualizando en este portafolio. Mis siguientes pasos son el estudio de Typescript y las herramientas utilizadas por backend's.",
+        "text-two": "¿Te gustaría contactarme?<",
+        "btn-proyects": "Contacto"
+    },
+
+    "proyect-one": {
+        "title-hover": "Página web presentada como 'proyecto final' del curso de Desarrollo Web en Coderhouse.",
+        "subtitle-hover": "Desarrollada con:",
+        "item-one": "HTML",
+        "item-two": "SASS",
+        "item-three": "GRID",
+        "item-four": "FLEXBOX",
+        "item-five": "BOOTSTRAP",
+        "item-six": "FORM SUBMIT",
+        "item-seven": "JAVASCRIPT"
+    },
+
+    "proyect-two": {
+        "title-hover": "Página web presentada como 'proyecto final' del curso de Desarrollo Web en Coderhouse.",
+        "subtitle-hover": "Desarrollada con:",
+        "item-one": "HTML",
+        "item-two": "SASS",
+        "item-three": "GRID",
+        "item-four": "FLEXBOX",
+        "item-five": "JAVASCRIPT"
+    },
+
+    "proyect-three": {
+        "title-hover": "Primer página web real realizada como freelance para un importador de vinos españoles. Aplicación web donde se encuentra el catálogo completo de productos del cliente, con los precios actualizados por el dolar y pago de productos dentro de la app (a través de API's), más la utilización de Firebase como base de datos.",
+        "subtitle-hover": "Desarrollada con:",
+        "item-one": "REACT JS",
+        "item-two": "JAVASCRIPT",
+        "item-three": "SASS",
+        "item-four": "NODE JS",
+        "item-five": "EXPRESS",
+        "item-six": "API's"
+    },
+
+    "contact": {
+        "title": "Contacto",
+        "label-one": "Nombre y Apellido",
+        "label-two": "Teléfono",
+        "label-three": "Email",
+        "label-four": "Comentarios",
+        "btn-contact": "Enviar",
+        "subtitle": "También podes contactarme por estos medios",
+        "link-one": "Linkedin",
+        "link-two": "GitHub",
+        "link-three": "Email",
+        "link-four": "Whatsapp",
+        "input-four": "Comentame el motivo de tu contacto...",
+        "success": "Muchas gracias por contactarte! Te responderé a la brevedad."
     }
 }
