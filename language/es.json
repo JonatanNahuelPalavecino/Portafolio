@@ -1,6 +1,6 @@
 {
     "head": {
-        "title": "Portafolio de Jonatan Palavecino - Desarrollador web"
+        "title": "Portafolio de Jonatan Palavecino - Desarrollador Frontend"
     },
 
     "navbar": {
@@ -12,7 +12,7 @@
     },
 
     "hero": {
-        "saludo": "Hola, mi nombre es Jonatan y soy desarrollador web!",
+        "saludo": "Hola, mi nombre es Jonatan y soy Desarrollador Frontend!",
         "btn-hero": "Comencemos!"
     },
 
@@ -28,7 +28,7 @@
     "proyects": {
         "title": "Mis proyectos",
         "text-one": "Actualmente me encuentro profundizando los conocimientos adquiridos y practicando en la creación de otros aplicativos web que iré actualizando en este portafolio. Mis siguientes pasos son el estudio de Typescript y las herramientas utilizadas por backend's.",
-        "text-two": "¿Te gustaría contactarme?<",
+        "text-two": "¿Te gustaría contactarme?",
         "btn-proyects": "Contacto"
     },
 
@@ -45,7 +45,7 @@
     },
 
     "proyect-two": {
-        "title-hover": "Página web presentada como 'proyecto final' del curso de Desarrollo Web en Coderhouse.",
+        "title-hover": "Página web presentada como 'proyecto final' del curso de Javascript en Coderhouse.",
         "subtitle-hover": "Desarrollada con:",
         "item-one": "HTML",
         "item-two": "SASS",

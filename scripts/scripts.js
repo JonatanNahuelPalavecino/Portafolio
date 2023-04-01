@@ -151,7 +151,7 @@ mensaje.classList.add("form-message")
 mensaje.innerHTML = `
     <div class="form-message-container">
         <div class="form-container-text">
-            <span data-section="contact" data-value="success" class="form-title">Muchas gracias por contactarte! Te responderé a la brevedad.</span>
+            <span data-section="contact" data-value="success" class="form-success">Muchas gracias por contactarte! Te responderé a la brevedad.</span>
         </div>
         <div class="form-container-icon">
             <img id="form-icon" class="form-icon" src="./images/close-circle-svgrepo-com.svg" alt="close">
@@ -267,6 +267,13 @@ flags.forEach((e) => {
     })
 })
 
+// LOADER PARA CARGA DE PAGINA
 
+const pageLoaded = () => {
+    const loader = document.querySelector(".loader-section")
+    
+    loader.classList.add("loaded")
+}
 
+document.onload = pageLoaded()
 

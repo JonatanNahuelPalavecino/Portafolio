@@ -15,9 +15,18 @@
 .form-title {
     font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
-    color: rgb(25, 25, 26);
+    color: aliceblue;
     text-transform: uppercase;
     padding: 10px 0;
+    text-shadow: -2px 2px black;
+}
+
+.form-success {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  color: black;
+  text-transform: uppercase;
+  padding: 10px 0;
 }
 
 .form-input {
@@ -32,8 +41,7 @@
     &:hover {
         background-color: white;
         transform: scale(1.05);
-        box-shadow: 13px 13px 100px #969696,
-                   -13px -13px 100px #ffffff;
+        box-shadow: -1px 3px 10px #969696, 1px -3px 10px #ffffff
     }
 }
 

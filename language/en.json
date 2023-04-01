@@ -1,6 +1,6 @@
 {
     "head": {
-        "title": "Jonatan Palavecino's Portfolio - Web developer"
+        "title": "Jonatan Palavecino's Portfolio - Frontend developer"
     },
 
     "navbar": {
@@ -12,29 +12,29 @@
     },
 
     "hero": {
-        "saludo": "Hi, my name is Jonatan and i'm Web developer!",
+        "saludo": "Hi, my name is Jonatan and i'm Frontend developer!",
         "btn-hero": "Get Started!"
     },
 
     "about": {
-        "text-one": "Mi nombre es Jonatan Palavecino, tengo 30 años, y vivo en el barrio de Mataderos de la Ciudad Autónoma de Buenos Aires. Desde principios del 2021 comencé a incursionar en el mundo de la programación con Java a través de videos en Youtube, hasta que en Octubre de ese mismo año me inscribí en la carrera de desarrollador Frontend de Coderhouse.",
-        "text-two": "Desde entonces aprendí:",
-        "title": "Cursos aprobados",
-        "text-three": "Y con estas herramientas pude emprender algunos proyectos.",
-        "text-four": "¿Te gustaría verlos?",
-        "btn-about": "Ver trabajos"
+        "text-one": "Mi name is Jonatan Palavecino, I'm 30 years old, and i live in Mataderos - Capital City from Buenos Aires - Argentina. I started study programmation at beginning of 2021 seeing Youtube's videos of JAVA. After that, i to register for the carrer of Frontend Web Developer in Coderhouse in October 2021",
+        "text-two": "Since then i learned:",
+        "title": "Aprroved courses",
+        "text-three": "And with this tools i could create any proyects.",
+        "text-four": "Would you like see that?",
+        "btn-about": "see 'my proyects'"
     },
 
     "proyects": {
-        "title": "Mis proyectos",
-        "text-one": "Actualmente me encuentro profundizando los conocimientos adquiridos y practicando en la creación de otros aplicativos web que iré actualizando en este portafolio. Mis siguientes pasos son el estudio de Typescript y las herramientas utilizadas por backend's.",
-        "text-two": "¿Te gustaría contactarme?<",
-        "btn-proyects": "Contacto"
+        "title": "My proyects",
+        "text-one": "Right now, i'm deeping my knowledges and practicing on the creation of others app's web. I will upload that in this portfolio. My nexts moves are study Typescript and all tools of backend's.",
+        "text-two": "¿Would you like contact me?",
+        "btn-proyects": "see 'contact'"
     },
 
     "proyect-one": {
-        "title-hover": "Página web presentada como 'proyecto final' del curso de Desarrollo Web en Coderhouse.",
-        "subtitle-hover": "Desarrollada con:",
+        "title-hover": "Web page shows like 'final proyect' in Web developmet course in Coderhouse.",
+        "subtitle-hover": "It was create with:",
         "item-one": "HTML",
         "item-two": "SASS",
         "item-three": "GRID",
@@ -45,8 +45,8 @@
     },
 
     "proyect-two": {
-        "title-hover": "Página web presentada como 'proyecto final' del curso de Desarrollo Web en Coderhouse.",
-        "subtitle-hover": "Desarrollada con:",
+        "title-hover": "Web page shows like 'final proyect' in Javascrpit course in Coderhouse.",
+        "subtitle-hover": "It was create with:",
         "item-one": "HTML",
         "item-two": "SASS",
         "item-three": "GRID",
@@ -55,8 +55,8 @@
     },
 
     "proyect-three": {
-        "title-hover": "Primer página web real realizada como freelance para un importador de vinos españoles. Aplicación web donde se encuentra el catálogo completo de productos del cliente, con los precios actualizados por el dolar y pago de productos dentro de la app (a través de API's), más la utilización de Firebase como base de datos.",
-        "subtitle-hover": "Desarrollada con:",
+        "title-hover": "First real app web as a freelance for a costumer. he imports wine's bottles from Spain and commercialize that in Argentina. In this app web, you can find all him products catalog. their prices ares updated and you can pay for then inside app web (API's connection). This page are connected with Firebase like database.",
+        "subtitle-hover": "It was create with:",
         "item-one": "REACT JS",
         "item-two": "JAVASCRIPT",
         "item-three": "SASS",
