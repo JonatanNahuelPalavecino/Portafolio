@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="./sass/main.css">
         <link rel="shortcut icon" href="./images/logo portafolio.png">
         <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-        <script src="https://unpkg.com/scrollreveal"></script>
         <script defer src="./scripts/scripts.js"></script>
         <title data-section="head" data-value="title">Portafolio de Jonatan Palavecino - Desarrollador web</title>
     </head>
@@ -39,10 +38,10 @@
             </div>
         </nav>
         <main id="hero" class="hero">
-            <div id="hero-containerImg" class="to-left hero-container">
+            <div id="hero-containerImg" class="hero-container-img">
                 <!-- Aca va la <img/> del DOM -->
             </div>
-            <div class="to-right hero-container">
+            <div class="hero-container-text">
                 <p data-section="hero" data-value="saludo" class="hero-text">Hola, mi nombre es Jonatan y soy Desarrollador Frontend!</p>
                 <button id="to-about" class="hero-btn">
                     <span class="shadow"></span>
@@ -50,7 +49,7 @@
                     <span data-section="hero" data-value="btn-hero" class="front text"> Comencemos!</span>
                 </button>
             </div>
-            <div class="area" >
+            <!-- <div class="area" >
                 <ul class="circles">
                         <li></li>
                         <li></li>
@@ -63,7 +62,7 @@
                         <li></li>
                         <li></li>
                 </ul>
-            </div >
+            </div > -->
         </main>
         <section id="about" class="about">
             <img class="wave-down" src="./images/wave.svg" alt="wave">
@@ -100,9 +99,9 @@
             </div>
             <div class="about-education">
                 <span data-section="about" data-value="title" class="about-text">Cursos aprobados</span>
-                <img class="to-left about-certificate" src="./images/Certificado - Desarrollo Web.png" alt="desarrollo-web">
-                <img class="to-right about-certificate" src="./images/Certificado - Javascript.png" alt="javascript">
-                <img class="to-left about-certificate" src="./images/Certificado - ReactJs.png" alt="ReactJs">
+                <img class="about-certificate" src="./images/Certificado - Desarrollo Web.png" alt="desarrollo-web">
+                <img class="about-certificate" src="./images/Certificado - Javascript.png" alt="javascript">
+                <img class="about-certificate" src="./images/Certificado - ReactJs.png" alt="ReactJs">
             </div>
             <div class="about-container">
                 <span data-section="about" data-value="text-three" class="about-text">Y con estas herramientas pude emprender algunos proyectos.</span>
@@ -119,7 +118,7 @@
             <img class="wave-down" src="./images/wave.svg" alt="wave">
             <span data-section="proyects" data-value="title" class="about-text">Mis proyectos</span>
             <div class="proyects-content">
-                <div class="to-left proyects-container">
+                <div class="proyects-container">
                     <img class="proyects-img" src="./images/didisculpidas.png" alt="didi-sculpidas">
                     <div class="proyects-detail">
                         <span data-section="proyect-one" data-value="title-hover" class="proyects-text">Página web presentada como "proyecto final" del curso de Desarrollo Web en Coderhouse.</span>
@@ -143,7 +142,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="to-right proyects-container">
+                <div class="proyects-container">
                     <img class="proyects-img" src="./images/juntad-app.png" alt="didi-sculpidas">
                     <div class="proyects-detail">
                         <span data-section="proyect-two" data-value="title-hover" class="proyects-text">Página web presentada como "proyecto final" del curso de Javascript en Coderhouse.</span>
@@ -165,10 +164,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="to-left proyects-container">
+                <div class="proyects-container">
                     <img class="proyects-img" src="./images/jbpremium.png" alt="jbpremium">
                     <div class="proyects-detail">
-                        <span data-section="proyect-three" data-value="title-hover" class="proyects-text">Primer página web real realizada como freelance para un importador de vinos españoles. Aplicación web donde se encuentra el catálogo completo de productos del cliente, con los precios actualizados por el dolar y pago de productos dentro de la app (a través de API's), más la utilización de Firebase como base de datos.</span>
+                        <span data-section="proyect-three" data-value="title-hover" class="proyects-text">Página web realizada como freelance un cliente. Aplicación web donde se encuentra el catálogo completo de productos del cliente traída de Firebase (database), con los precios actualizados y pago de productos dentro de la app (a través de API's).</span>
                         <span data-section="proyect-three" data-value="subtitle-hover" class="proyects-text">Desarrollado con:</span>
                         <ul class="proyects-list">
                             <li data-section="proyect-three" data-value="item-one" class="proyects-item">REACT JS</li>
@@ -198,7 +197,6 @@
             <img class="wave-up" src="./images/wave.svg" alt="wave">
         </section>
         <section id="contact" class="contact">
-            <div class="contact-space"></div>
             <span data-section="contact" data-value="title" class="contact-text">Contacto</span>
             <div class="contact-container">
                 <div class="contact-box">
@@ -260,7 +258,7 @@
                     </div>
                 </div>
             </div>
-            <div class="area rotate">
+            <!-- <div class="area rotate">
                 <ul class="circles">
                         <li></li>
                         <li></li>
@@ -273,7 +271,7 @@
                         <li></li>
                         <li></li>
                 </ul>
-            </div >
+            </div > -->
         </section>
         <div class="loader-section">
             <span class="loader"></span>

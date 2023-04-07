@@ -1,0 +1,35 @@
+@mixin desde1024px {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin desde768px {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desde650px {
+    @media screen and (max-width: 650px) {
+        @content;
+    }
+}
+
+@mixin desde550px {
+    @media screen and (max-width: 550px) {
+        @content;
+    }
+}
+
+@mixin desde425px {
+    @media screen and (max-width: 425px) {
+        @content;
+    }
+}
+
+@mixin desde380px {
+    @media screen and (max-width: 380px) {
+        @content;
+    }
+}

@@ -55,7 +55,7 @@
     },
 
     "proyect-three": {
-        "title-hover": "Primer página web real realizada como freelance para un importador de vinos españoles. Aplicación web donde se encuentra el catálogo completo de productos del cliente, con los precios actualizados por el dolar y pago de productos dentro de la app (a través de API's), más la utilización de Firebase como base de datos.",
+        "title-hover": "Página web realizada como freelance un cliente. Aplicación web donde se encuentra el catálogo completo de productos del cliente traída de Firebase (database), con los precios actualizados y pago de productos dentro de la app (a través de API's).",
         "subtitle-hover": "Desarrollada con:",
         "item-one": "REACT JS",
         "item-two": "JAVASCRIPT",

@@ -19,6 +19,9 @@
     text-transform: uppercase;
     padding: 10px 0;
     text-shadow: -2px 2px black;
+    @include desde650px {
+      font-size: 1rem;
+  }
 }
 
 .form-success {

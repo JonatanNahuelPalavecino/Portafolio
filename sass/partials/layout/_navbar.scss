@@ -1,3 +1,5 @@
+@import "../responsive/media-queries";
+
 .nav {
     width: 100%;
     position: fixed;
@@ -36,6 +38,10 @@
             background-color: #f3003b;
             transition: all 0.4s ease;;
             z-index: -1;
+            @include desde768px {
+                width: 150px;
+                right: -150px;
+            }
 
             &.appear {
                 right: 0;

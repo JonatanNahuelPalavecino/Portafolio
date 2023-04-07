@@ -79,10 +79,10 @@ var splide = new Splide( '.splide', {
     type   : 'loop',
     perPage: 3,
     focus  : 'center',
-    autoplay: true,
+    // autoplay: true,
     pagination: false,
-    pauseOnHover: false,
-    pauseOnFocus: false,
+    // pauseOnHover: false,
+    // pauseOnFocus: false,
 });
   
 splide.mount();
@@ -211,22 +211,6 @@ btnSubmit.addEventListener("click", (e) => {
 
     peticion()
 })
-
-//EFECTO DE SCROLL
-
-ScrollReveal().reveal('.to-left', { 
-    distance: '100px',
-    origin: "left",
-    reset: "true",
-    delay: 200,
-});
-
-ScrollReveal().reveal('.to-right', { 
-    distance: '100px',
-    origin: "right",
-    reset: "true",
-    delay: 200,
-});
 
 // EVENTO DE CIERRE DE BOTON (EN MENSAJE)
 
