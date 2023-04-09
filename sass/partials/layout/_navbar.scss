@@ -17,10 +17,9 @@
         &-img {
             width: 100px;
             height: 100px;
-
-            &-change {
-                width: 85px;
-                height: 85px;
+            @include desde650px {
+                width: 75px;
+                height: 75px;
             }
         }
 

@@ -23,54 +23,18 @@ link.forEach( (e) => {
 
 const nav = document.getElementById("nav")
 const logo = document.getElementById("logo")
-const itemOne = document.getElementById("item-one")
-const itemTwo = document.getElementById("item-two")
-const itemThree = document.getElementById("item-three")
+const triggerItems = document.querySelectorAll(".nav-trigger-items")
 
 document.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
         nav.classList.add("nav-change")
         logo.classList.add("nav-color-change")
-        itemOne.classList.add("nav-color-change")
-        itemTwo.classList.add("nav-color-change")
-        itemThree.classList.add("nav-color-change")
+        triggerItems.forEach( e => e.classList.add("nav-color-change"))
     } else {
         nav.classList.remove("nav-change")
         logo.classList.remove("nav-color-change")
-        itemOne.classList.remove("nav-color-change")
-        itemTwo.classList.remove("nav-color-change")
-        itemThree.classList.remove("nav-color-change")
+        triggerItems.forEach( e => e.classList.remove("nav-color-change"))
     }
-})
-
-// EVENTO DE QUE UN BOTON ME LLEVE A UNA SECCION
-
-const btnToAbout = document.getElementById("to-about")
-const btnToWork = document.getElementById("to-work")
-const btnToContact = document.getElementById("to-contact")
-
-btnToAbout.addEventListener("click", () => {
-    // window.scrollTo({
-    //     top: "#about",
-    //     behavior: "smooth"
-    // })
-    window.scrollBy(0, window.innerHeight);
-})
-
-btnToWork.addEventListener("click", () => {
-    // window.scrollTo({
-    //     top: "4300",
-    //     behavior: "smooth"
-    // })
-    window.scrollBy(0, window.innerHeight);
-})
-
-btnToContact.addEventListener("click", () => {
-    // window.scrollTo({
-    //     top: "7000",
-    //     behavior: "smooth"
-    // })
-    window.scrollBy(0, window.innerHeight);
 })
 
 //CARROUSEL
@@ -79,15 +43,15 @@ var splide = new Splide( '.splide', {
     type   : 'loop',
     perPage: 3,
     focus  : 'center',
-    // autoplay: true,
+    autoplay: true,
     pagination: false,
-    // pauseOnHover: false,
-    // pauseOnFocus: false,
+    pauseOnHover: false,
+    pauseOnFocus: false,
 });
   
 splide.mount();
 
-// HOVER DE CAMBIO DE IMAGEN EN HERO
+// APLICACION DE UNA ETIQUETA CON JS A TRAVES DEL DOM
 
 const contenedorImg = document.getElementById("hero-containerImg")
 

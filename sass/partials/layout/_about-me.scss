@@ -26,6 +26,7 @@
         text-transform: uppercase;
         width: 75%;
         text-align: center;
+        margin: 1rem;
         @include desde768px {
             font-size: 1.8rem;
             width: 90%;
