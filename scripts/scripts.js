@@ -218,30 +218,41 @@ flags.forEach((e) => {
 // LOADER PARA CARGA DE PAGINA
 
 const showOrHideLoader = (boolean) => {
-    const loader = document.querySelector(".loader-section")
+    const loader = document.querySelector(".loader-section");
     if (!boolean) {
-        loader.classList.add("loaded")
+      loader.classList.add("loaded");
     } else {
-        loader.classList.remove("loaded")
+      loader.classList.remove("loaded");
     }
-}
-
-showOrHideLoader(true)
-
-// Registrar eventos de carga de imágenes
-const images = document.querySelectorAll('img');
-const totalImages = images.length;
-let loadedImages = 0;
-
-images.forEach(image => {
-  image.addEventListener('load', () => {
-    loadedImages++;
-    if (loadedImages === totalImages) {
-      showOrHideLoader(false)
-    }
-  });
-});
-
-
-
+  };
+  
+  // Obtener todas las imágenes del proyecto
+  const images = document.querySelectorAll("img");
+  const totalImages = images.length;
+  let loadedImages = 0;
+  
+  // Mostrar loader inicialmente
+  showOrHideLoader(true);
+  
+  // Función para cargar una imagen
+  const loadImage = (src) => {
+    const img = new Image();
+    img.onload = () => {
+      loadedImages++;
+      if (loadedImages === totalImages) {
+        // Se cargaron todas las imágenes, ocultar el loader
+        showOrHideLoader(false);
+      }
+    };
+    img.onerror = (error) => {
+      console.error("Error al cargar una imagen:", error);
+    };
+    img.src = src;
+  };
+  
+  // Cargar todas las imágenes
+  for (const image of images) {
+    loadImage(image.src);
+  }
+  
 
