@@ -217,11 +217,31 @@ flags.forEach((e) => {
 
 // LOADER PARA CARGA DE PAGINA
 
-const pageLoaded = () => {
+const showOrHideLoader = (boolean) => {
     const loader = document.querySelector(".loader-section")
-    
-    loader.classList.add("loaded")
+    if (!boolean) {
+        loader.classList.add("loaded")
+    } else {
+        loader.classList.remove("loaded")
+    }
 }
 
-document.onload = pageLoaded()
+showOrHideLoader(true)
+
+// Registrar eventos de carga de imágenes
+const images = document.querySelectorAll('img');
+const totalImages = images.length;
+let loadedImages = 0;
+
+images.forEach(image => {
+  image.addEventListener('load', () => {
+    loadedImages++;
+    if (loadedImages === totalImages) {
+      showOrHideLoader(false)
+    }
+  });
+});
+
+
+
 
