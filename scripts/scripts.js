@@ -37,19 +37,19 @@ document.addEventListener("scroll", () => {
     }
 })
 
-//CARROUSEL
+// //CARROUSEL
 
-var splide = new Splide( '.splide', {
-    type   : 'loop',
-    perPage: 3,
-    focus  : 'center',
-    autoplay: true,
-    pagination: false,
-    pauseOnHover: false,
-    pauseOnFocus: false,
-});
+// var splide = new Splide( '.splide', {
+//     type   : 'loop',
+//     perPage: 3,
+//     focus  : 'center',
+//     autoplay: true,
+//     pagination: false,
+//     pauseOnHover: false,
+//     pauseOnFocus: false,
+// });
   
-splide.mount();
+// splide.mount();
 
 // APLICACION DE UNA ETIQUETA CON JS A TRAVES DEL DOM
 
@@ -59,130 +59,130 @@ contenedorImg.innerHTML = `
         <img id="img" class="hero-img" src="./images/27.02.2023_20.32.49_REC-removebg-preview.png" alt="Jonatan animado">
 `
 
-// FORMULARIO
+// // FORMULARIO
 
-const btnSubmit = document.getElementById("form-btn")
-const formulario = document.getElementById("form")
-const userName = document.getElementById("user-name")
-const userNumber = document.getElementById("user-number")
-const userMail = document.getElementById("user-email")
-const userText = document.getElementById("user-text")
+// const btnSubmit = document.getElementById("form-btn")
+// const formulario = document.getElementById("form")
+// const userName = document.getElementById("user-name")
+// const userNumber = document.getElementById("user-number")
+// const userMail = document.getElementById("user-email")
+// const userText = document.getElementById("user-text")
 
-const peticion = async () => {
+// const peticion = async () => {
 
-    const data = {
-        service_id: 'service_ss9d6fk',
-        template_id: 'template_m1t27wb',
-        user_id: 'aZgMn9dfcQY3QZtbj',
-        template_params: {
-            'from_name': userName.value,
-            'from_number': userNumber.value,
-            'from_email': userMail.value,
-            'message': userText.value
-        }
-    };
+//     const data = {
+//         service_id: 'service_ss9d6fk',
+//         template_id: 'template_m1t27wb',
+//         user_id: 'aZgMn9dfcQY3QZtbj',
+//         template_params: {
+//             'from_name': userName.value,
+//             'from_number': userNumber.value,
+//             'from_email': userMail.value,
+//             'message': userText.value
+//         }
+//     };
 
-    const spinner = document.getElementById("spinner")
-    spinner.innerHTML = `
-        <div class="lds-ring">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    `
+//     const spinner = document.getElementById("spinner")
+//     spinner.innerHTML = `
+//         <div class="lds-ring">
+//             <div></div>
+//             <div></div>
+//             <div></div>
+//             <div></div>
+//         </div>
+//     `
 
-    await fetch("https://api.emailjs.com/api/v1.0/email/send", {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: {
-            "Content-Type": 'application/json',
-        }
-    })
-    .then(() => {
-        spinner.innerText = "Enviar"
-        mostrarMensaje()
-        formulario.reset()
-    })
-    .catch((err) => {
-        console.log(err);
-    })
-}
+//     await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+//         method: "POST",
+//         body: JSON.stringify(data),
+//         headers: {
+//             "Content-Type": 'application/json',
+//         }
+//     })
+//     .then(() => {
+//         spinner.innerText = "Enviar"
+//         mostrarMensaje()
+//         formulario.reset()
+//     })
+//     .catch((err) => {
+//         console.log(err);
+//     })
+// }
 
-const mensaje = document.createElement("div")
+// const mensaje = document.createElement("div")
 
-mensaje.classList.add("form-message")
-mensaje.innerHTML = `
-    <div class="form-message-container">
-        <div class="form-container-text">
-            <span data-section="contact" data-value="success" class="form-success">Muchas gracias por contactarte! Te responderé a la brevedad.</span>
-        </div>
-        <div class="form-container-icon">
-            <img id="form-icon" class="form-icon" src="./images/close-circle-svgrepo-com.svg" alt="close">
-        </div>
-    </div>
-`
-formulario.append(mensaje)
+// mensaje.classList.add("form-message")
+// mensaje.innerHTML = `
+//     <div class="form-message-container">
+//         <div class="form-container-text">
+//             <span data-section="contact" data-value="success" class="form-success">Muchas gracias por contactarte! Te responderé a la brevedad.</span>
+//         </div>
+//         <div class="form-container-icon">
+//             <img id="form-icon" class="form-icon" src="./images/close-circle-svgrepo-com.svg" alt="close">
+//         </div>
+//     </div>
+// `
+// formulario.append(mensaje)
 
-const mostrarMensaje = () => {
+// const mostrarMensaje = () => {
 
-    mensaje.classList.add("form-message-active")
+//     mensaje.classList.add("form-message-active")
 
-    setTimeout(() => {
-        mensaje.classList.remove("form-message-active")
-    }, 3000);
-}
+//     setTimeout(() => {
+//         mensaje.classList.remove("form-message-active")
+//     }, 3000);
+// }
 
-btnSubmit.addEventListener("click", (e) => {
-    e.preventDefault();
+// btnSubmit.addEventListener("click", (e) => {
+//     e.preventDefault();
 
-    //verificacion de los campos
+//     //verificacion de los campos
 
-    if (userName.value.length < 5) {
+//     if (userName.value.length < 5) {
 
-        userName.classList.add("form-advice")
+//         userName.classList.add("form-advice")
 
-        setTimeout(() => {
-            userName.classList.remove("form-advice")
-        }, 1000);
+//         setTimeout(() => {
+//             userName.classList.remove("form-advice")
+//         }, 1000);
 
-        return
-    }
+//         return
+//     }
     
-    if (userNumber.value.length < 10) {
+//     if (userNumber.value.length < 10) {
 
-        userNumber.classList.add("form-advice")
+//         userNumber.classList.add("form-advice")
 
-        setTimeout(() => {
-            userNumber.classList.remove("form-advice")
-        }, 1000);
+//         setTimeout(() => {
+//             userNumber.classList.remove("form-advice")
+//         }, 1000);
 
-        return
-    }
+//         return
+//     }
 
-    const emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+//     const emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     
-    if (!emailRegex.test(userMail.value)) {
+//     if (!emailRegex.test(userMail.value)) {
 
-        userMail.classList.add("form-advice")
+//         userMail.classList.add("form-advice")
 
-        setTimeout(() => {
-            userMail.classList.remove("form-advice")
-        }, 1000);
+//         setTimeout(() => {
+//             userMail.classList.remove("form-advice")
+//         }, 1000);
 
-        return
-    }
+//         return
+//     }
 
-    peticion()
-})
+//     peticion()
+// })
 
-// EVENTO DE CIERRE DE BOTON (EN MENSAJE)
+// // EVENTO DE CIERRE DE BOTON (EN MENSAJE)
 
-const btnClose = document.getElementById("form-icon")
+// const btnClose = document.getElementById("form-icon")
 
-btnClose.addEventListener("click", () => {
-    mensaje.classList.remove("form-message-active")
-})
+// btnClose.addEventListener("click", () => {
+//     mensaje.classList.remove("form-message-active")
+// })
 
 // CAMBIO DE IDIOMA
 
@@ -215,44 +215,44 @@ flags.forEach((e) => {
     })
 })
 
-// LOADER PARA CARGA DE PAGINA
+// // LOADER PARA CARGA DE PAGINA
 
-const showOrHideLoader = (boolean) => {
-    const loader = document.querySelector(".loader-section");
-    if (!boolean) {
-      loader.classList.add("loaded");
-    } else {
-      loader.classList.remove("loaded");
-    }
-};
+// const showOrHideLoader = (boolean) => {
+//     const loader = document.querySelector(".loader-section");
+//     if (!boolean) {
+//       loader.classList.add("loaded");
+//     } else {
+//       loader.classList.remove("loaded");
+//     }
+// };
   
-// Obtener todas las imágenes del proyecto
-const images = document.querySelectorAll("img");
-const totalImages = images.length;
-let loadedImages = 0;
+// // Obtener todas las imágenes del proyecto
+// const images = document.querySelectorAll("img");
+// const totalImages = images.length;
+// let loadedImages = 0;
   
-// Mostrar loader inicialmente
-showOrHideLoader(true);
+// // Mostrar loader inicialmente
+// showOrHideLoader(true);
   
-// Función para cargar una imagen
-const loadImage = (src) => {
-  const img = new Image();
-  img.onload = () => {
-    loadedImages++;
-    if (loadedImages === totalImages) {
-      // Se cargaron todas las imágenes, ocultar el loader
-      showOrHideLoader(false);
-    }
-  };
-  img.onerror = (error) => {
-    console.error("Error al cargar una imagen:", error);
-  };
-  img.src = src;
-};
+// // Función para cargar una imagen
+// const loadImage = (src) => {
+//   const img = new Image();
+//   img.onload = () => {
+//     loadedImages++;
+//     if (loadedImages === totalImages) {
+//       // Se cargaron todas las imágenes, ocultar el loader
+//       showOrHideLoader(false);
+//     }
+//   };
+//   img.onerror = (error) => {
+//     console.error("Error al cargar una imagen:", error);
+//   };
+//   img.src = src;
+// };
   
-// Cargar todas las imágenes
-for (const image of images) {
-  loadImage(image.src);
-}
+// // Cargar todas las imágenes
+// for (const image of images) {
+//   loadImage(image.src);
+// }
   
 
