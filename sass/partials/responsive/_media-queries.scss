@@ -4,6 +4,12 @@
     }
 }
 
+@mixin desde1000px {
+    @media screen and (max-width: 1000px) {
+        @content;
+    }
+}
+
 @mixin desde768px {
     @media screen and (max-width: 768px) {
         @content;

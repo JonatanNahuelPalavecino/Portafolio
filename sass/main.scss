@@ -2,10 +2,14 @@
 
 @import "./partials/base/reset";
 
-@import "./partials/elements/loader";
+// @import "./partials/elements/loader";
 
+@import "./partials/layout/estructura";
 @import "./partials/layout/navbar";
 @import "./partials/layout/hero";
-
+@import "./partials/layout/about-me";
+@import "./partials/layout/proyects";
+@import "./partials/layout/contact";
+@import "./partials/layout/form";
 
 @import "./partials/responsive/media-queries";

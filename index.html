@@ -1,68 +1,266 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./sass/main.css">
-        <link rel="shortcut icon" href="./images/logo portafolio.png">
-        <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-        <script defer src="./scripts/scripts.js"></script>
-        <title data-section="head" data-value="title">Portafolio de Jonatan Palavecino - Desarrollador web</title>
-    </head>
-    <body>
-        <nav id="nav" class="nav">
-            <div class="nav-container">
-                <div class="nav-container-img">
-                    <a href="/">
-                        <img id="logo" class="nav-img" src="./images/logo portafolio.png" alt="logo">
-                    </a>
-                </div>
-                <div id="trigger" class="nav-trigger">
-                    <span class="nav-trigger-items"></span>
-                    <span class="nav-trigger-items"></span>
-                    <span class="nav-trigger-items"></span>
-                </div>
-                <div id="sidebar" class="nav-container-link">
-                    <a data-section="navbar" data-value="link-one" class="nav-link" href="#hero">INICIO</a>
-                    <a data-section="navbar" data-value="link-two" class="nav-link" href="#about">SOBRE MÍ</a>
-                    <a data-section="navbar" data-value="link-three" class="nav-link" href="#work">MIS TRABAJOS</a>
-                    <a data-section="navbar" data-value="link-four" class="nav-link" href="#contact">CONTACTO</a>
-                    <a data-section="navbar" data-value="link-five" class="nav-link" href="./doc/Resume-Jonatan-Palavecino.pdf" download="Resume Jonatan Palavecino">DESCARGAR CV</a>
-                    <div class="nav-container-checkbox">
-                        <img class="flags nav-checkbox-img" src="./images/spain-1.1s-200px.png" data-language="es" alt="Español">   
-                        <img class="flags nav-checkbox-img" src="./images/the united states-1.1s-200px.png" data-language="en" alt="Inglés">
-                    </div>
-                </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo portafolio.png">
+    <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <title>Inicio - Portafolio de Jonatan Palavecino</title>
+    <link rel="stylesheet" href="./sass/main.css">
+    <script defer src="./scripts/vars.js"></script>
+    <script defer src="./scripts/functions.js"></script>
+    <script defer src="./scripts/app.js"></script>
+</head>
+<body>
+    <nav id="nav" class="nav">
+        <div class="nav-container">
+            <div class="nav-container-img">
+                <a href="/">
+                    <img id="logo" class="nav-img" src="./images/logo portafolio.png" alt="logo">
+                </a>
             </div>
-        </nav>
+            <div id="trigger" class="nav-trigger">
+                <span class="nav-trigger-items"></span>
+                <span class="nav-trigger-items"></span>
+                <span class="nav-trigger-items"></span>
+            </div>
+        </div>
+        <div id="sidebar" class="nav-container-link">
+            <button data-section="navbar" data-value="link-one" class="nav-link" value="hero">INICIO</button>
+            <button data-section="navbar" data-value="link-two" class="nav-link" value="about">SOBRE MÍ</button>
+            <button data-section="navbar" data-value="link-three" class="nav-link" value="work">MIS TRABAJOS</button>
+            <button data-section="navbar" data-value="link-four" class="nav-link" value="contact">CONTACTO</button>
+            <button data-section="navbar" data-value="link-five" class="nav-link" href="./doc/Resume-Jonatan-Palavecino.pdf" download="Resume Jonatan Palavecino">DESCARGAR CV</button>
+            <div class="nav-container-checkbox">
+                <img class="flags nav-checkbox-img" src="./images/spain-1.1s-200px.png" data-language="es" alt="Español">   
+                <img class="flags nav-checkbox-img" src="./images/the united states-1.1s-200px.png" data-language="en" alt="Inglés">
+            </div>
+        </div>
+    </nav>
+    <div class="estructura">
         <main id="hero" class="hero">
             <div id="hero-containerImg" class="hero-container-img">
                 <!-- Aca va la <img/> del DOM -->
             </div>
             <div class="hero-container-text">
                 <p data-section="hero" data-value="saludo" class="hero-text">Hola, mi nombre es Jonatan y soy Desarrollador Frontend!</p>
-                <button id="to-about" class="hero-btn">
+                <button value="about" class="hero-btn">
                     <span class="shadow"></span>
                     <span class="edge"></span>
-                    <a href="#about" data-section="hero" data-value="btn-hero" class="front text"> Comencemos!</a>
+                    <a data-section="hero" data-value="btn-hero" class="front text"> Comencemos!</a>
                 </button>
             </div>
             <div class="area" >
                 <ul class="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                 </ul>
-        </div >
+            </div>
         </main>
-    </body>
+        <main id="about" class="about hidde">
+            <img class="wave-down" src="./images/wave.svg" alt="wave">
+            <div class="about-container">
+                <span data-section="about" data-value="text-one" class="about-text">Mi nombre es Jonatan Palavecino, tengo 30 años, y vivo en el barrio de Mataderos de la Ciudad Autónoma de Buenos Aires. Desde principios del 2021 comencé a incursionar en el mundo de la programación con Java a través de videos en Youtube, hasta que en Octubre de ese mismo año me inscribí en la carrera de desarrollador Frontend de Coderhouse.</span>
+                <span data-section="about" data-value="text-two" class="about-text">Desde entonces aprendí:</span>
+            </div>
+            <div class="splide slider" aria-label="Basic Structure Example">
+                <div class="splide__track slider-container">
+                  <ul class="splide__list slider-box">
+                    <li class="splide__slide slider-content">
+                        <img class="slider-img" src="./images/reactjs-svgrepo-com.svg" alt="reactjs">
+                    </li>
+                    <li class="splide__slide slider-content">
+                        <img class="slider-img" src="./images/javascript-svgrepo-com.svg" alt="javascript">
+                    </li>
+                    <li class="splide__slide slider-content">
+                        <img class="slider-img" src="./images/html-5-svgrepo-com.svg" alt="html">
+                    </li>
+                    <li class="splide__slide slider-content">
+                        <img class="slider-img" src="./images/css-3-svgrepo-com.svg" alt="css">
+                    </li>
+                    <li class="splide__slide slider-content">
+                        <img class="slider-img" src="./images/sass-svgrepo-com.svg" alt="sass">
+                    </li>
+                    <li class="splide__slide slider-content">
+                        <img class="slider-img" src="./images/git-svgrepo-com.svg" alt="git">
+                    </li>
+                    <li class="splide__slide slider-content">
+                        <img class="slider-img" src="./images/github-svgrepo-com.svg" alt="github">
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <div class="about-education">
+                <span data-section="about" data-value="title" class="about-text">Cursos aprobados</span>
+                <img class="about-certificate" src="./images/Certificado - Desarrollo Web.png" alt="desarrollo-web">
+                <img class="about-certificate" src="./images/Certificado - Javascript.png" alt="javascript">
+                <img class="about-certificate" src="./images/Certificado - ReactJs.png" alt="ReactJs">
+            </div>
+            <div class="about-container">
+                <span data-section="about" data-value="text-three" class="about-text">Y con estas herramientas pude emprender algunos proyectos.</span>
+                <span data-section="about" data-value="text-four" class="about-text">¿Te gustaría verlos?</span>
+            </div>
+            <button value="work" class="hero-btn">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <a data-section="about" data-value="btn-about" class="front text">Ver trabajos</a>
+            </button>
+            <img class="wave-up" src="./images/wave.svg" alt="wave">
+        </main>
+        <main id="work" class="proyects hidde">
+            <img class="wave-down" src="./images/wave.svg" alt="wave">
+            <span data-section="proyects" data-value="title" class="proyects-title">Mis proyectos</span>
+            <div class="proyects-content">
+                <div class="proyects-container">
+                    <img class="proyects-img" src="./images/didisculpidas.png" alt="didi-sculpidas">
+                    <div class="proyects-detail">
+                        <span data-section="proyect-one" data-value="title-hover" class="proyects-text">Página web presentada como "proyecto final" del curso de Desarrollo Web en Coderhouse.</span>
+                        <span data-section="proyect-one" data-value="subtitle-hover" class="proyects-text">Desarrollada con:</span>
+                        <ul class="proyects-list">
+                            <li data-section="proyect-one" data-value="item-one" class="proyects-item">HTML</li>
+                            <li data-section="proyect-one" data-value="item-two" class="proyects-item">SASS</li>
+                            <li data-section="proyect-one" data-value="item-three" class="proyects-item">GRID</li>
+                            <li data-section="proyect-one" data-value="item-four" class="proyects-item">FLEXBOX</li>
+                            <li data-section="proyect-one" data-value="item-five" class="proyects-item">BOOTSTRAP</li>
+                            <li data-section="proyect-one" data-value="item-six" class="proyects-item">FORM SUBMIT</li>
+                            <li data-section="proyect-one" data-value="item-seven" class="proyects-item">JAVASCRIPT</li>
+                        </ul>
+                        <div class="proyects-box">
+                            <a class="proyects-box-img" target="_blank" href="https://github.com/JonatanNahuelPalavecino/di-disculpidas">
+                                <img class="proyects-image" src="./images/github-svgrepo-com.svg" alt="github">
+                            </a>
+                            <a class="proyects-box-img" target="_blank" href="https://di-disculpidas.vercel.app/">
+                                <img class="proyects-image" src="./images/link-square-svgrepo-com.svg" alt="link">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyects-container">
+                    <img class="proyects-img" src="./images/juntad-app.png" alt="didi-sculpidas">
+                    <div class="proyects-detail">
+                        <span data-section="proyect-two" data-value="title-hover" class="proyects-text">Página web presentada como "proyecto final" del curso de Javascript en Coderhouse.</span>
+                        <span data-section="proyect-two" data-value="subtitle-hover" class="proyects-text">Desarrollado con:</span>
+                        <ul class="proyects-list">
+                            <li data-section="proyect-two" data-value="item-one" class="proyects-item">HTML</li>
+                            <li data-section="proyect-two" data-value="item-two" class="proyects-item">SASS</li>
+                            <li data-section="proyect-two" data-value="item-three" class="proyects-item">GRID</li>
+                            <li data-section="proyect-two" data-value="item-four" class="proyects-item">FLEXBOX</li>
+                            <li data-section="proyect-two" data-value="item-five" class="proyects-item">JAVASCRIPT</li>
+                        </ul>
+                        <div class="proyects-box">
+                            <a class="proyects-box-img" target="_blank" href="https://github.com/JonatanNahuelPalavecino/JuntadApp">
+                                <img class="proyects-image" src="./images/github-svgrepo-com.svg" alt="github">
+                            </a>
+                            <a class="proyects-box-img" target="_blank" href="https://juntad-app.vercel.app/">
+                                <img class="proyects-image" src="./images/link-square-svgrepo-com.svg" alt="link">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyects-container">
+                    <img class="proyects-img" src="./images/jbpremium.png" alt="jbpremium">
+                    <div class="proyects-detail">
+                        <span data-section="proyect-three" data-value="title-hover" class="proyects-text">Página web realizada como freelance para un cliente. Aplicación web donde se encuentra el catálogo completo de productos del cliente traída de Firebase (database), con los precios actualizados y pago de productos dentro de la app (a través de API's).</span>
+                        <span data-section="proyect-three" data-value="subtitle-hover" class="proyects-text">Desarrollado con:</span>
+                        <ul class="proyects-list">
+                            <li data-section="proyect-three" data-value="item-one" class="proyects-item">REACT JS</li>
+                            <li data-section="proyect-three" data-value="item-two" class="proyects-item">JAVASCRIPT</li>
+                            <li data-section="proyect-three" data-value="item-three" class="proyects-item">SASS</li>
+                            <li data-section="proyect-three" data-value="item-four" class="proyects-item">NODE JS</li>
+                            <li data-section="proyect-three" data-value="item-five" class="proyects-item">EXPRESS</li>
+                            <li data-section="proyect-three" data-value="item-six" class="proyects-item">API's</li>
+                        </ul>
+                        <div class="proyects-box">
+                            <a class="proyects-box-img" target="_blank" href="https://jbpremium.com.ar/">
+                                <img class="proyects-image" src="./images/link-square-svgrepo-com.svg" alt="link">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-container">
+                <span data-section="proyects" data-value="text-one" class="about-text">Actualmente me encuentro profundizando los conocimientos adquiridos y practicando en la creación de otros aplicativos web que iré actualizando en este portafolio. Mis siguientes pasos son el estudio de Typescript y las herramientas utilizadas por backend's.</span>
+                <span data-section="proyects" data-value="text-two" class="about-text">¿Te gustaría contactarme?</span>
+            </div>
+            <button value="contact" class="hero-btn">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <a data-section="proyects" data-value="btn-proyects" class="front text"> Contacto</a>
+            </button>
+            <img class="wave-up" src="./images/wave.svg" alt="wave">
+        </main>
+        <main id="contact" class="contact hidde">
+            <span data-section="contact" data-value="title" class="contact-text">Contacto</span>
+            <div class="contact-container">
+                <div class="contact-box">
+                    <form id="form" class="form" action="">
+                        <fieldset class="form-container">
+                            <div class="form-box-input">
+                                <label data-section="contact" data-value="label-one" class="form-title" for="user-name">Nombre y Apellido</label>
+                                <input class="form-input" type="text" id="user-name" name="user-name">
+                            </div>
+                            <div class="form-box-input">
+                                <label data-section="contact" data-value="label-two" class="form-title" for="user-number">Teléfono</label>
+                                <input class="form-input" type="number" id="user-number" name="user-number">
+                            </div>
+                            <div class="form-box-input">
+                                <label data-section="contact" data-value="label-three" class="form-title" for="user-email">Email</label>
+                                <input class="form-input" type="text" id="user-email" name="user-email">
+                            </div>
+                            <div class="form-box-input">
+                                <label data-section="contact" data-value="label-four" class="form-title" for="user-text">Comentarios</label>
+                                <textarea class="form-input form-textarea" id="user-text" name="user-text"></textarea>
+                            </div>
+                            <button id="form-btn" type="submit" class="hero-btn form-btn">
+                                <span class="shadow"></span>
+                                <span class="edge"></span>
+                                <span data-section="contact" data-value="btn-contact" id="spinner" class="front"> Enviar</span>
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="contact-box">
+                    <div class="contact-detail">
+                        <span data-section="contact" data-value="subtitle" class="contact-title">También podes contactarme por estos medios</span>
+                        <ul class="contact-btns">
+                            <li class="contact-btn">
+                                <a class="contact-link" href="https://www.linkedin.com/in/jonatan-nahuel-palavecino-rivas-80a47a95/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 0 1-1.548-1.549 1.548 1.548 0 1 1 1.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z"/></svg>
+                                    <span data-section="contact" data-value="link-one">Linkedin</span>
+                                </a>
+                            </li>
+                            <li class="contact-btn">
+                                <a class="contact-link" href="https://github.com/JonatanNahuelPalavecino" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 0 0 6.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 0 1 2.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0 0 22 12c0-5.525-4.475-10-10-10z"/></svg>
+                                    <span data-section="contact" data-value="link-two">Github</span>
+                                </a>
+                            </li>
+                            <li class="contact-btn">
+                                <a class="contact-link" href="mailto:jnpr1992@hotmail.com" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z"/></svg>
+                                    <span data-section="contact" data-value="link-three">Email</span>   
+                                </a>
+                            </li>
+                            <li class="contact-btn">
+                                <a class="contact-link" href="https://wa.me/541158836236" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M2.004 22l1.352-4.968A9.954 9.954 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.004 22zM8.391 7.308a.961.961 0 0 0-.371.1 1.293 1.293 0 0 0-.294.228c-.12.113-.188.211-.261.306A2.729 2.729 0 0 0 6.9 9.62c.002.49.13.967.33 1.413.409.902 1.082 1.857 1.971 2.742.214.213.423.427.648.626a9.448 9.448 0 0 0 3.84 2.046l.569.087c.185.01.37-.004.556-.013a1.99 1.99 0 0 0 .833-.231c.166-.088.244-.132.383-.22 0 0 .043-.028.125-.09.135-.1.218-.171.33-.288.083-.086.155-.187.21-.302.078-.163.156-.474.188-.733.024-.198.017-.306.014-.373-.004-.107-.093-.218-.19-.265l-.582-.261s-.87-.379-1.401-.621a.498.498 0 0 0-.177-.041.482.482 0 0 0-.378.127v-.002c-.005 0-.072.057-.795.933a.35.35 0 0 1-.368.13 1.416 1.416 0 0 1-.191-.066c-.124-.052-.167-.072-.252-.109l-.005-.002a6.01 6.01 0 0 1-1.57-1c-.126-.11-.243-.23-.363-.346a6.296 6.296 0 0 1-1.02-1.268l-.059-.095a.923.923 0 0 1-.102-.205c-.038-.147.061-.265.061-.265s.243-.266.356-.41a4.38 4.38 0 0 0 .263-.373c.118-.19.155-.385.093-.536-.28-.684-.57-1.365-.868-2.041-.059-.134-.234-.23-.393-.249-.054-.006-.108-.012-.162-.016a3.385 3.385 0 0 0-.403.004z"/></svg>
+                                    <span data-section="contact" data-value="link-four">Whatsapp</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
 </html>
