@@ -14,6 +14,7 @@
 
 .form-title {
   font-family: 'Oswald', sans-serif;
+  font-weight: 700;
   font-size: 1.2rem;
   color: aliceblue;
   text-transform: uppercase;
@@ -26,6 +27,7 @@
 
 .form-success {
 font-family: 'Oswald', sans-serif;
+font-weight: 700;
 font-size: 1.2rem;
 color: black;
 text-transform: uppercase;
@@ -33,6 +35,9 @@ padding: 10px 0;
 }
 
 .form-input {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  width: 200px;
   border: none;
   outline: none;
   border-radius: 15px;
@@ -78,7 +83,7 @@ padding: 10px 0;
 
 .form-message-active {
   opacity: 1;
-  z-index: 0;
+  z-index: 1;
 }
 
 .form-message-container {

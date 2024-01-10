@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #fbfbf7;
+    overflow: hidden;
 
     &.hidde {
         position: absolute;
@@ -14,6 +15,7 @@
 
     &-title {
         font-family: "Oswald", sans-serif;
+        font-weight: 700;
         font-size: 2rem;
         color: rgb(25, 25, 26);
         text-transform: uppercase;
@@ -94,6 +96,7 @@
     
     &-text {
         font-family: 'Oswald', sans-serif;
+        font-weight: 700;
         font-size: 1.5rem;
         color: rgb(25, 25, 26);
         text-transform: uppercase;

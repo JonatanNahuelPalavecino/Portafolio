@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #fbfbf7;
+    overflow: hidden;
 
     &.hidde {
         position: absolute;
@@ -37,6 +38,7 @@
     
     &-text {
         font-family: 'Oswald', sans-serif;
+        font-weight: 700;
         font-size: 2rem;
         color: rgb(25, 25, 26);
         text-transform: uppercase;
@@ -63,22 +65,125 @@
         padding: 2rem;
         transform: translateX(-300%);
         transition: transform .5s ease;
+        width: 800px;
+        height: 145vh;
+        @include desde1000px {
+            width: 675px;
+        }
         @include desde768px {
-            padding: 1rem;
+            width: 500px;
+            margin:  0 0 3rem 0;
+        }
+        @include desde650px {
+            margin:  0 0 2rem 0;
+        }
+        @include desde550px {
+            width: 425px;
+        }
+        @include desde425px {
+            width: 400px;
         }
 
         &.show {
             transform: translateX(0);
         }
     }
-    
-    &-certificate {
-        width: 65%;
-        box-shadow:  -15px 15px 30px #646463,
-             15px -15px 30px #ffffff;
-        margin: 2rem;
-        @include desde768px {
-            width: 85%;
+
+    &-timeLine {
+        margin: 3rem 0;
+        align-self: flex-start;
+        width: 5px;
+        height: 100vh;
+        background: hsl(345deg 100% 47%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style-type: none;
+        border-radius: 25px;
+        box-shadow: -4px 2px 5px 0px black;
+        
+        &-line {
+            width: 100px;
+            height: 5px;
+            background: hsl(345deg 100% 47%);
+            position: relative;
+            left: 3px;
+            z-index: 0;
+            border-radius: 25px;
+            @include desde768px {
+                width: 50px;
+            }
+        }
+        
+        &-ball {
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: -5px;
+            right: -10px;
+            z-index: -2;
+        }
+        
+        &-box {
+            display: flex;
+            flex-direction: column;
+            width: 650px;
+            position: absolute;
+            top: -20px;
+            left: 120%;
+            @include desde1000px {
+                width: 500px;
+                top: -15px;
+                left: 140%;
+            }
+            @include desde768px {
+                width: 400px;
+            }
+            @include desde550px {
+                width: 300px;
+            }
+            @include desde425px {
+                width: 250px;
+            }
+        }
+        
+        &-title {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            font-size: 1.7rem;
+            @include desde768px {
+                font-size: 1.4rem;
+            }
+            @include desde650px {
+                font-size: 1.2rem;
+            }
+            @include desde425px {
+                font-size: 1rem;
+            }
+        }
+        
+        &-desc {
+            font-family: 'Oswald', sans-serif;
+            font-style: italic;
+            margin: 0 0 1rem 1rem; 
+            font-size: 1.2rem;
+            @include desde768px {
+                font-size: 1.1rem;
+            }
+        }
+        
+        &-skill {
+            font-family: 'Oswald', sans-serif;     
+            margin: 0 0 0 1rem; 
+            font-size: 1.4rem;
+            @include desde768px {
+                font-size: 1.2rem;
+            }
+            @include desde650px {
+                font-size: 1rem;
+            }
         }
     }
 }
@@ -146,8 +251,14 @@
 }
 
 .wave-down {
+    transform: translateY(-100%);
     position: relative;
     bottom: 3px;
+    transition: transform .5s ease;
+    
+    &.show {
+        transform: translateY(0);
+    }
 }
 
 .splide__arrow--prev {

@@ -3,24 +3,20 @@ const seleccionarTitulo = (dato) => {
       case "hero":
         document.title = "Inicio - Portafolio de Jonatan Palavecino"
         history.pushState(null, null, `/`)
-        history.pushState(null, null, `/pages/${dato}.html`)
         break;
   
       case "about":
         document.title = "Sobre mí - Portafolio de Jonatan Palavecino"
-        history.pushState(null, null, `/`)
         history.pushState(null, null, `/pages/${dato}.html`)
         break;
   
       case "work":
         document.title = "Mis proyectos - Portafolio de Jonatan Palavecino"
-        history.pushState(null, null, `/`)
         history.pushState(null, null, `/pages/${dato}.html`)
         break;
   
       case "contact":
         document.title = "Contacto - Portafolio de Jonatan Palavecino"
-        history.pushState(null, null, `/`)
         history.pushState(null, null, `/pages/${dato}.html`)
         break;
     
@@ -47,7 +43,7 @@ const mostrarHijos = () => {
   const triggerBottom = window.innerHeight / 5 * 4;
 
   for (const hijo of padre) {
-    
+  
     const boxTop = hijo.getBoundingClientRect().top;
 
     if (boxTop < triggerBottom) {
@@ -134,3 +130,4 @@ const changeLanguage = async (language) => {
       // console.log(texts[section][value]);
   }
 }
+

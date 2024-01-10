@@ -2,9 +2,13 @@
 
 btn.forEach((e) => {
 
+  if (e.id === "form-btn") {
+    return
+  }
+
   e.addEventListener("click", () => {
     
-    // window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     const sacarElemento = detectarElemento(e)
     const traerElemento = document.querySelector(`#${e.value}`);
@@ -130,7 +134,16 @@ btnClose.addEventListener("click", () => {
 // FUNCION PARA CAMBIAR EL IDIOMA
 
 flags.forEach((e) => {
+  
   e.addEventListener("click", async (el) => {
-      await changeLanguage(el.target.dataset.language); //Selecciona las etiquetas que tengan el atributo "data-language" y pasa el valor como parametro a la funcion "changeLanguage" ("es" o "en")
+
+    const view = document.querySelector("main:not(.hidde)").id !== "hero" ? document.querySelector("main:not(.hidde)").id : "/"
+
+    history.pushState(null, null, `/`)
+
+    await changeLanguage(el.target.dataset.language);
+
+    history.pushState(null, null, `/pages/${view}.html`)
+    
   })
 })

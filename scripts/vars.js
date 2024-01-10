@@ -8,7 +8,7 @@ contenedorImg.innerHTML = `
 const trigger = document.getElementById("trigger")
 const sidebar = document.getElementById("sidebar")
 const link = document.querySelectorAll(".nav-link")
-const nav = document.querySelector(".nav-container")
+const nav = document.querySelector(".nav")
 const logo = document.getElementById("logo")
 const triggerItems = document.querySelectorAll(".nav-trigger-items")
 
@@ -30,6 +30,7 @@ const userName = document.getElementById("user-name")
 const userNumber = document.getElementById("user-number")
 const userMail = document.getElementById("user-email")
 const userText = document.getElementById("user-text")
+const contact = document.getElementById("contact")
 
 const mensaje = document.createElement("div")
 
@@ -44,15 +45,11 @@ mensaje.innerHTML = `
         </div>
     </div>
 `
-formulario.append(mensaje)
+contact.append(mensaje)
 
 const btnClose = document.getElementById("form-icon")
 
 const flags = document.querySelectorAll(".flags")
 const textsToChange = document.querySelectorAll("[data-section]")
 
-//   const waveDown = document.querySelectorAll(".wave-down")
-//   const waveUp = document.querySelectorAll(".wave-up")
-
-//   console.log(waveDown);
-//   console.log(waveUp);
+// emailjs.init("aZgMn9dfcQY3QZtbj");

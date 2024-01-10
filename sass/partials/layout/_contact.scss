@@ -45,6 +45,7 @@
     
     &-text {
         font-family: "Oswald", sans-serif;
+        font-weight: 700;
         font-size: 2rem;
         color: aliceblue;
         text-transform: uppercase;
@@ -66,6 +67,7 @@
     
     &-title {
         font-family: 'Oswald', sans-serif;
+        font-weight: 700;
         text-align: center;
         font-size: 1.2rem;
         color: aliceblue;
@@ -83,6 +85,8 @@
     }
     
     &-btn {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
         border: none;
         outline: none;
         border-radius: 15px;
@@ -114,6 +118,10 @@
         color: rgb(25, 25, 26);
         text-transform: uppercase;
         text-decoration: none;
+    }
+
+    &-icon {
+        margin: 0 .5rem;
     }
 }
 
